@@ -20,7 +20,7 @@ I welcome and encourage contributions! Whether you'd like to write an article, s
 
 ### How to Contribute
 
-1. **Writing Articles**: If you have expertise or insights you'd like to share, feel free to write an article and submit it. I will read through it, make a potential adjustments and publish the article under your name ((i'll send you my modifications for your review before publishing it since the article is published under your name). If you don't wish to have the article published under your name, that's fine too.
+1. **Writing Articles**: If you have expertise or insights you'd like to share, feel free to write an article and submit it. I will read through it, make a potential adjustments and publish the article under your name (i'll send you my modifications for your review before publishing it since the article is published under your name). If you don't wish to have the article published under your name, that's fine too.
    
 2. **Enhancing the Code**: Developers can contribute by improving the website’s functionality, adding new features, or fixing bugs. Fork the repository, make your changes, and submit a pull request.
 
