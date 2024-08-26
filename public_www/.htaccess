@@ -1,0 +1,15 @@
+# Enable mod_rewrite
+RewriteEngine on
+
+# Set the default index file, prioritizing index.html over index.php
+DirectoryIndex index.html index.php
+
+# Redirect root requests to index.html if it exists
+RewriteRule ^$ index.html [L]
+
+# Exclude existing directories and files from rewrite rules
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Rewrite requests to .html files
+RewriteRule ^(.*)$ $1.html [L]

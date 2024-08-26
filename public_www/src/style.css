@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply bg-neutral-800 rounded-xl overflow-hidden shadow-md cursor-pointer;
+}
+
+.btn{
+    @apply rounded-full py-2 px-3 m-6 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}
+
+.bigbtn{
+    @apply rounded-2xl py-2 px-3 m-6 uppercase text-sm font-semibold cursor-pointer tracking-wider;
+}
+
+.bigbtn-container {
+    display: inline-block;
+    position: relative;
+}
+
+.bigbtn {
+    transition: padding-right 0.2s ease-out, width 0.2s ease-out;
+}
+
+.arrow {
+    opacity: 0;
+    margin-left: 10px;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.bigbtn:hover {
+    padding-right: 36px; /* Adjust this value to add space for the arrow */
+}
+
+.bigbtn:hover .arrow {
+    opacity: 1;
+}
+
+.bigbtn:active .arrow {
+    transform: translateX(30px); /* Adjust this value to move the arrow to the right */
+}
+
+.level-btn {
+    @apply px-3 md:px-8 rounded-lg md:rounded-t-3xl p-3 m-4 bg-opacity-20 border transform hover:-translate-y-2 hover:bg-opacity-30 active:translate-y-2 transition ease-out duration-500;
+}
+
+.tooltip {
+    @apply text-primary pointer-events-none;
+}
+
+.group:hover .tooltip {
+    display: flex;
+    opacity: 1;
+}
+
+/* Tooltip container styles */
+  .badge-tooltip-container {
+    --background: #333333;
+    --color: #CFCFED;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    display: inline-block;
+  }
+  
+  /* Tooltip styles */
+  .badge-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0.3em 0.6em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    background: var(--background);
+    color: var(--color);
+    z-index: 10;
+    border-radius: 8px;
+    scale: 0;
+    transform-origin: 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  }
+  
+  /* Tooltip arrow */
+  .badge-tooltip::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.3em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+    z-index: -1;
+  }
+  
+  /* Tooltip container hover effects */
+  .badge-tooltip-container:hover .badge-tooltip {
+    bottom: 75%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    scale: 1;
+    animation: shake 0.5s ease-in-out both;
+  }
+  
+  .badge-tooltip-container:hover {
+    color: white;
+    border-color: transparent;
+  }
+  
+  /* Shake animation */
+  @keyframes shake {
+    0% {
+      rotate: 0;
+    }
+    25% {
+      rotate: 7deg;
+    }
+    50% {
+      rotate: -7deg;
+    }
+    75% {
+      rotate: 1deg;
+    }
+    100% {
+      rotate: 0;
+    }
+  }
+
+.title-two {
+    @apply mb-4 text-lg font-bold;
+}
+
+.title-three {
+  @apply mb-8 text-2xl font-bold;
+}
+
+.paragraph {
+  @apply mb-8 text-base list-none; /* Ensures no default list styles */
+}
+
+.section {
+  @apply mt-8 mb-24;
+}
+
+.pros-cons-section {
+  @apply mt-24 border-l-4 border-gray-700 px-8;
+}
+
+.line {
+    @apply border-b border-gray-700 pb-2;
+}
+
+.bullet-point {
+  @apply flex items-start my-4 text-base; /* Align items to the top */
+}
+
+.bullet-point svg {
+  @apply flex-shrink-0 translate-y-1; /* Prevent the SVG from shrinking */
+}
+
+.text-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow text to wrap when needed */
+  flex: 1;
+  align-items: center; /* Align the text vertically with the SVG */
+}
+
+.text-content a {
+  @apply font-medium; /* Ensure the <a> is bold */
+  margin-right: 4px; /* Add a small margin between the <a> and the colon */
+}
+
+.text-content span {
+  display: inline; /* Keep span inline to stay on the same line as <a> */
+}
+
+@media (max-width: 768px) {
+  .text-content {
+      flex-direction: column; /* Stack the text vertically on smaller screens */
+      align-items: flex-start; /* Align text to the start of the column */
+  }
+  
+  .text-content a,
+  .text-content span {
+      margin-left: 0; /* Remove margin on smaller screens to prevent text shifting */
+  }
+}
+
+.top-badges {
+    @apply mt-56 md:mt-96 md:ml-8;
+}
+
+/* From Uiverse.io by ElSombrero2 */ 
+.flash-card {
+  overflow: visible;
+  width: 190px;
+  height: 254px;
+}
+
+.flash-card-content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #295acc, #295acc, #295acc, #295acc, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #151515;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  padding: 16px;
+}
+
+.flash-card:hover .flash-card-content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  0% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #295acc;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #cc2931;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ffffff;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.bg{
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-blue {
+    background-image: url('img/banner_1.png');
+}
+
+.banner-red {
+    background-image: url('img/banner_2.png');
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust z-index as needed */
+    transition: background-color 0.5s, box-shadow 0.5s, border-color 0.5s;
+}
+
+.scrolled {
+    background-color: black; /* Ensure the background is opaque */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for better visibility */
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: rgb(57, 57, 57);
+}
