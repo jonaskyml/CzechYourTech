@@ -40,5 +40,4 @@ For any inquiries, suggestions, or collaboration requests, feel free to reach ou
 
 ## Additional Information
 
-- **Related Articles**: [Antivirus Software](link to article), [VPNs Explained](link to article), [Dark Web Overview](link to article)
 - **Resources**: Visit the official website at [CzechYourTech](https://www.czechyourtech.com) for more information.
