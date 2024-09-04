@@ -12,8 +12,6 @@
 .blog-card {
   background: #333333;
   border-radius: 30px;
-  box-shadow: 15px 15px 30px #1a1919,
-             -15px -15px 30px #1c1c1c;
   transition: 0.2s ease-in-out;
 }
 
@@ -115,9 +113,8 @@
   .badge-tooltip-container {
     --background: #333333;
     --color: #CFCFED;
-    position: relative;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    display: inline-block;
+    @apply mx-2 sm:mx-4;
   }
   
   /* Tooltip styles */
@@ -163,11 +160,56 @@
     scale: 1;
     animation: shake 0.5s ease-in-out both;
   }
-  
+
   .badge-tooltip-container:hover {
     color: white;
     border-color: transparent;
   }
+
+  .text-tooltip-container {
+    position: relative;
+    display: inline-block;
+    margin: 2px;
+  }
+  
+  .text-containing-tooltip {
+    cursor: help;
+  }
+  
+  .text-tooltip {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #222 transparent;
+    transform: translateX(-50%);
+  }
+  
+  .text-tooltip-container:hover .text-tooltip {
+    top: 220%;
+    opacity: 1;
+    visibility: visible;
+    background: #222;
+    transform: translate(-50%, -5px);
+  }
+  
   
   /* Shake animation */
   @keyframes shake {
@@ -228,7 +270,7 @@
 }
 
 .text-content a {
-  @apply font-medium; /* Ensure the <a> is bold */
+  @apply font-bold; /* Ensure the <a> is bold */
   margin-right: 4px; /* Add a small margin between the <a> and the colon */
 }
 
@@ -249,7 +291,7 @@
 }
 
 .top-badges {
-    @apply mt-56 md:mt-96 md:ml-8;
+    @apply mt-16 md:mt-16 md:ml-8;
 }
 
 /* From Uiverse.io by ElSombrero2 */ 

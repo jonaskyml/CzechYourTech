@@ -6,13 +6,13 @@
     <title>CzechYourTech</title>
     <link rel="icon" type="image/png" href="img/y_favicon.png?v=1.0.1">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=1.0.12">
+    <link rel="stylesheet" href="styles.css?v=1.0.13">
 </head>
-<body class="text-primary font-body bg bg-background">
+<body itemscope itemtype="https://schema.org/WebPage" class="text-primary font-body bg bg-background">
 
 <div class="selection:bg-gray-300 selection:text-gray-900"><!-- content wrapper-->
     <div><!-- navbar -->
-        <nav class="flex items-center justify-between p-4 border-hidden sticky">
+        <nav itemprop="breadcrumb" class="flex items-center justify-between p-4 border-hidden sticky">
             <div class="flex items-center">
                 <a href="/">
                     <img src="img/2.png?v=1.0.1" alt="cyt" class="object-cover w-full h-12">
@@ -50,10 +50,10 @@
         </nav>
     </div><!-- end nav -->
 
-    <main class="px-8 py-6 mt-32">
+    <main itemprop="mainContentOfPage" class="px-8 py-6 mt-32">
         <div class="flex justify-center transform active:scale-90 transition ease-out duration-500"><!-- website title -->
             <h1 class="text-primary text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-h1 font-extrabold p-4">
-                <a href="/">CzechYourTech</a>
+                <a itemprop href="/" class="uppercase">CzechYourTech</a>
             </h1>
         </div>
 
@@ -74,7 +74,14 @@
             </form>
         </div>
 
-        <header class="text-primary md:flex mt-80 items-center">
+        <div itemprop="about" class="mt-60 lg:px-64 transform lg:-translate-x-48">
+            <p class="text-3xl font-bold mb-4">Co je CzechYourTech?</p>
+            <p itemprop="abstract">CzechYourTech je webová stránka, na které se můžete dozvědět, jak být na internetu opatrný a šikovný. Poskytuje jednoduché a přehledné informace o kybernetické bezpečnosti, ochraně soukromí, zachování anonymity a zlepšení vašich digitálních dovedností. Mnoho lidí v České republice nemá dostatek informací o tom, jak se na internetu chránit, a CzechYourTech je tu proto, aby jim s tím pomohl.</p>
+            <p class="text-3xl font-bold mb-4 mt-16">Proč byste se měli starat o soukromí na internetu?</p>
+            <p>Online soukromí je důležité, protože chrání váš osobní život před lidmi, kteří by vás mohli chtít špehovat, jako jsou velké společnosti, vlády nebo hackeři. I když si myslíte, že nemáte co skrývat, vše, co děláte online, zanechává stopu, která může být použita proti vám. Soukromí je důležité pro prosté věci, jako je provádění plateb, posílání zpráv svým blízkým nebo sledování obsahu v soukromí. Dbát o své soukromí znamená, že si svůj online život udržujete jen pro sebe.</p>
+        </div>
+
+        <header class="text-primary md:flex mt-48 items-center">
             <div class="relative inline-block">
                 <h2 class="text-5xl font-bold">Nejnovější články</h2>
                 <div class="bigbtn-container relative">
@@ -94,13 +101,22 @@
         <div class="col-span-1"><!-- articles -->
             <div class="mt-8 grid md:grid-cols-3 gap-10">
                 <!-- cards go here -->
-                <div class="card bg-neutral-800 rounded-xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transform hover:-translate-y-1 active:translate-y-2 ease-out duration-500 relative">
-                    <div class="image-wrapper">
-                        <img src="img/2.png?v=1.0.1" alt="czechyourtech" class="image">
+
+                <a itemscope itemtype="https://schema.org/BlogPosting" class="blog-card cursor-pointer overflow-hidden shadow-md min-h-96 max-w-72 md:min-h-0 md:max-w-none transform hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex justify-center max-h-72">
+                        <img itemprop="image" src="/img/blog-cyt.png?v=1.0.5" class="max-h-full object-contain">
                     </div>
-                    <div class="m-4">
-                        <span class="font-bold">CzechYourTech</span>
-                        <span class="block text-gray-400 text-sm">Jak tuto webovou stránku používat?</span>
+                  
+                    <div class="text">
+                        <p itemprop="headline" class="text-primary text-2xl font-bold"> CzechYourTech </p>
+                        <p itemprop="alternativeHeadline" class="text-gray-400 text-sm">Jak tuto webovou stránku používat?</p>
+                  
+                        <div class="icon-box max-w-32 opacity-50 hover:shadow-md transition hover:opacity-100 ease-out duration-300">
+                            <p itemprop="genre" class="span text-primary">📝 Jak na to</p>
+                        </div>
+                        <div class="icon-box max-w-20 opacity-50 hover:shadow-md transition hover:opacity-100 ease-out duration-300">
+                            <p itemprop="timeRequired" content="PT5M" class="span text-primary">5 MIN</p>
+                        </div>
                     </div>
                     <div class="absolute top-4 left-4 group">
                         <!-- Badge --> 
@@ -114,55 +130,50 @@
                             Připnuto autorem, abyste se dozvěděli, jak tuto stránku používat.
                         </div>
                     </div>
-                </div>
-                
-                <div class="blog-card cursor-pointer overflow-hidden min-h-96 max-w-72 md:min-h-0 md:max-w-none transform hover:-translate-y-1">
-                    <div class="flex justify-center max-h-72">
-                        <img src="/img/2.png" class="max-h-full object-contain">
-                    </div>
-                  
-                    <div class="text">
-                      <p class="text-primary text-3xl font-bold"> Obsidian </p>
-                      <p class="text-gray-400 text-sm">Nejbezpečnější místo pro vaše poznámky</p>
-                  
-                        <div class="icon-box max-w-48 opacity-50 hover:shadow-md transition hover:opacity-100 ease-out duration-300">
-                            <p class="span text-primary">🔍 Recenze produktu</p>
-                        </div>
-                    </div>
-                </div>
+                </a>
 
-                <div class="blog-card cursor-pointer overflow-hidden min-h-96 max-w-72 md:min-h-0 md:max-w-none transform hover:-translate-y-1">
+                <a href="blog/obsidian" itemscope itemtype="https://schema.org/BlogPosting" class="blog-card cursor-pointer overflow-hidden shadow-md min-h-96 max-w-72 md:min-h-0 md:max-w-none transform hover:-translate-y-1 hover:shadow-lg">
                     <div class="flex justify-center max-h-72">
-                        <img src="/img/obsidian.png" class="max-h-full object-contain">
+                        <img itemprop="image" src="/img/obsidian.png?v=1.0.5" class="max-h-full object-contain">
                     </div>
                   
                     <div class="text">
-                      <p class="text-primary text-3xl font-bold"> Obsidian </p>
-                      <p class="text-gray-400 text-sm">Nejbezpečnější místo pro vaše poznámky</p>
+                        <p itemprop="headline" class="text-primary text-3xl font-bold"> Obsidian </p>
+                        <p itemprop="alternativeHeadline" class="text-gray-400 text-sm">Nejbezpečnější místo pro vaše poznámky</p>
                   
                         <div class="icon-box max-w-48 opacity-50 hover:shadow-md transition hover:opacity-100 ease-out duration-300">
-                            <p class="span text-primary">🔍 Recenze produktu</p>
+                            <p itemprop="genre" class="span text-primary">🔍 Recenze produktu</p>
+                        </div>
+                        <div class="icon-box max-w-20 opacity-50 hover:shadow-md transition hover:opacity-100 ease-out duration-300">
+                            <p itemprop="timeRequired" content="PT5M" class="span text-primary">5 MIN</p>
                         </div>
                     </div>
-                </div>
+                </a>
+
+                <a itemscope itemtype="https://schema.org/BlogPosting" class="blog-card cursor-pointer overflow-hidden shadow-md min-h-96 max-w-72 md:min-h-0 md:max-w-none transform hover:-translate-y-1 hover:shadow-lg">
+                    <div class="flex justify-center max-h-72">
+                        <img itemprop="image" src="/img/protonmail.png?v=1.0.5" class="max-h-full object-contain">
+                    </div>
                   
-            
-                <div class="card hover:shadow-xl transform hover:-translate-y-1 active:translate-y-2 transition ease-out duration-500 relative">
-                    <div class="image-wrapper">
-                        <img src="img/protonmail.png?v=1.0.1" alt="protonmail" class="image">
+                    <div class="text">
+                        <p itemprop="headline" class="text-primary text-3xl font-bold"> Proton </p>
+                        <p itemprop="alternativeHeadline" class="text-gray-400 text-sm">Nejspolehlivější e-mail poskytovatel a mnoho dalšího</p>
+                  
+                        <div class="icon-box max-w-48 opacity-50 hover:shadow-md transition hover:opacity-100 ease-out duration-300">
+                            <p itemprop="genre" class="span text-primary">🔍 Recenze produktu</p>
+                        </div>
+                        <div class="icon-box max-w-20 opacity-50 hover:shadow-md transition hover:opacity-100 ease-out duration-300">
+                            <p itemprop="timeRequired" content="PT5M" class="span text-primary">5 MIN</p>
+                        </div>
                     </div>
-                    <div class="m-4">
-                        <span class="font-bold">ProtonMail</span>
-                        <span class="block text-gray-400 text-sm">Nejspolehlivější e-mail poskytovatel</span>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <div class="flex justify-center">
                 <div class="btn text-gray-300 bg-gray-800 p-4 shadow-sm transform hover:shadow-md hover:-translate-y-1 transition ease-out duration-200 hover:bg-gray-700 active:translate-y-0">Načíst více</div>
             </div>
 
-            <h4 class="font-bold mt-12 pb-2 border-b border-gray-700">Nejrelevantnější články</h4>
+            <h4 class="text-2xl font-bold mt-12 pb-2 border-b border-gray-700">Nejrelevantnější články</h4>
 
             <div class="mt-8">
                 <!-- cards go here -->
