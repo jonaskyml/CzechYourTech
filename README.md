@@ -12,7 +12,7 @@ CzechYourTech is a platform dedicated to making complex tech concepts, cybersecu
 
 ## Usage
 
-CzechYourTech is a web-based platform. You can access all content directly through the website [CzechYourTech](https://www.czechyourtech.com). The site is designed to be user-friendly, making it easy for anyone to find the information they need.
+CzechYourTech is a web-based platform. You can access all content directly through the website [CzechYourTech](https://www.czechyourtech.cz). The site is designed to be user-friendly, making it easy for anyone to find the information they need.
 
 ## Contributing
 
@@ -40,4 +40,4 @@ For any inquiries, suggestions, or collaboration requests, feel free to reach ou
 
 ## Additional Information
 
-- **Resources**: Visit the official website at [CzechYourTech](https://www.czechyourtech.com) for more information.
+- **Resources**: Visit the official website at [CzechYourTech](https://www.czechyourtech.cz) for more information.
