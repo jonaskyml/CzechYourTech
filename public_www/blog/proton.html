@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsidian | CzechYourTech Blog</title>
+    <link rel="icon" type="image/png" href="/img/y_favicon.png?v=1.0.1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=1.0.31">
+    <style>
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+
+        .level-one.active {
+            background-color:darkgray;
+            color: black;
+        }
+
+        .level-two.active {
+            background-color: steelblue;
+        }
+
+        .level-three.active {
+            background-color:firebrick;
+        }
+
+        /* .button-group button.active {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        } */
+    </style>
+</head>
+<body class="text-primary font-body bg-background">
+
+<div class="selection:bg-gray-300 selection:text-gray-900"><!-- content wrapper-->
+    <div><!-- navbar -->
+        <nav class="flex items-center justify-between p-4 border-hidden sticky">
+            <div class="flex items-center">
+                <a href="/">
+                    <img src="/img/2.png?v=1.0.1" alt="cyt" class="object-cover w-full h-12">
+                </a>
+                <ul class="flex items-center ml-4">
+                    <li class="text-sm sm:text-base py-2 px-4 transform hover:-translate-y-1 active:scale-90 transition ease-out duration-500">
+                        <a href="/" class="flex items-center">
+                            <svg class="w-6 hidden md:inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            <span>Domů</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <ul class="flex items-center">
+                <li class="text-sm sm:text-base py-2 px-4 transform hover:-translate-y-1 active:scale-90 transition ease-out duration-500">
+                    <a href="/about" class="flex items-center">
+                        <svg class="w-6 hidden md:inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                        </svg>
+                        <span>O projektu</span>
+                    </a>
+                </li>
+                <li class="text-sm sm:text-base py-2 px-4 transform hover:-translate-y-1 active:scale-90 transition ease-out duration-500">
+                    <a href="/contact" class="flex items-center">
+                        <svg class="w-6 hidden md:inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+                        <span>Kontakt</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div><!-- end nav -->
+
+    <main class="px-8 py-6 mt-32 relative">
+        <div class="absolute inset-x-0 p-2 md:p-20">
+            <div class="relative group inline-block p-3">
+                <div class="font-h1 text-primary text-sm uppercase transform translate-y-4 translate-x-2">
+                    Jonáš Kyml 12. září 2024
+                </div>
+              
+                <div class="tooltip absolute left-2 sm:left-60 transform sm:-translate-y-44 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                    <ul class="p-4 space-y-1">
+                        <li class="py-1 text-gray-500 font-bold">Poprvé zveřejněno:</li>
+                        <li class="pl-8 py-1 text-gray-500 font-normal">12. ZÁŘÍ 2024</li>
+                        <li class="py-1 text-gray-500 font-bold">Naposledy upraveno:</li>
+                        <li class="pl-8 py-1 text-gray-500 font-normal">12. ZÁŘÍ 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <h1 class="text-primary text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-h1 font-extrabold p-4">
+                PROTON
+            </h1>
+
+            <!-- <div class="image-wrappe flex justify-end">
+                <img src="/img/obsidian.png" alt="obsidian app" class="w-1/2 transform -translate-y-72 translate-x-32">
+            </div> -->
+        </div>      
+
+        <div class="button-group flex justify-center mt-64 lg:mt-96 text-xs md:text-base">
+            <button class="level-one level-btn bg-gray-500 border-gray-400" onclick="switchContent(1)">Úroveň 1</button>
+            <button class="level-two level-btn bg-blue-500 border-blue-400" onclick="switchContent(2)">Úroveň 2</button>
+            <button class="level-three level-btn bg-red-500 border-red-400" onclick="switchContent(3)">Úroveň 3</button>
+        </div>
+
+        <article class="content" id="level1">
+            <!-- Level 1 content goes here -->
+            
+            <div class="top-badges flex border-l-4 border-gray-700 border-opacity-75 justify-start p-4">
+    
+                <div class="badge-tooltip-container relative inline-block">
+                    <div>
+                        <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow">
+                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span class="badge-tooltip">Autor doporučuje</span>
+                </div>
+            
+                <div class="badge-tooltip-container relative inline-block">
+                    <div>
+                        <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#D7141A" d="M1.383 29.973A3.795 3.795 0 0 0 4 31h28c2.209 0 4-1.791 4-4.5V18H17.5L1.383 29.973z"></path><path fill="#EEE" d="M32 5H4a3.98 3.98 0 0 0-2.646 1.006L17.5 18H36V9a4 4 0 0 0-4-4z"></path><path fill="#11457E" d="M1.383 29.973L17.5 18L1.354 6.006A3.985 3.985 0 0 0 0 9v17.5c0 1.48.537 2.683 1.383 3.473z"></path></g></svg>
+                    </div>
+                    <span class="badge-tooltip">Podporuje češtinu</span>
+                </div>
+
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                            </svg>                      
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-24 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Finanční dostupnost:</li>
+                            <li class="pl-4 py-1">💲 Bezplatný plán s možností vylepšení</li>
+                            <li class="pl-4 py-1">🎓 Studentská sleva</li>
+                            <li class="pl-4 py-1">👨‍👩‍👧‍👦 Rodinný plán</li>
+                            <li class="pl-4 py-1">🚫 Bez reklam</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>  
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-32 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Na jakých zařízeních je program dostupný:</li>
+                            <li class="pl-4 py-1">✅ Android</li>
+                            <li class="pl-4 py-1">✅ Apple (iOS)</li>
+                            <li class="pl-4 py-1">✅ Windows</li>
+                            <li class="pl-4 py-1">✅ MacOS</li>
+                            <li class="pl-4 py-1">✅ Linux</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="badge-tooltip-container flex relative group">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/lqxfrxad.json"
+                                trigger="loop-on-hover"
+                                state="loop-scale"
+                                colors="primary:#ffffff"
+                                style="width:30px;height:30px">
+                            </lord-icon>
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-52 sm:-left-2 mt-12 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Ostatní:</li>
+                            <li class="pl-4 py-1">🌐 Nevyžaduje internetové připojení</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(synchronizace samozřejmě ano)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <span class="relative flex justify-center my-12">
+                <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+              
+                <span class="relative text-gray-500 font-bold z-10 bg-background px-6"></span>
+            </span>
+
+
+            <div class="flex justify-start text-md mt-0 lg:px-32 lg:pr-96">
+                <div class="text-lg">
+                    <div class="font-body text-md mt-12 pb-2">
+    
+                        <section class="section">
+                            <p class="title-two">Chcete superbezpečné, ale zároveň přívětivé a jednoduché místo pro své poznámky?</p>
+                            <p class="paragraph">Ideálním řešením je <span class="font-bold">Obsidian</span>. Tento bezplatný software funguje jak v mobilním telefonu, tak v počítači. Je skvělou volbou, pokud chcete mít své poznámky naprosto soukromé a organizované.</p>    
+                        </section>
+    
+                        <section class="section">
+                            <span class="font-bold text-4xl">Klíčové body</span>
+    
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Zdarma:</a><span> Za používání základních funkcí nemusíte platit.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Dostupný na všech zařízeních:</a><span> Funguje na mobilních telefonech i počítačích.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ochrana osobních údajů:</a><span> Vaše poznámky jsou v naprostém soukromí.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+    
+                        <section class="section">
+                            <span class="font-bold text-4xl">Design a použitelnost</span>
+    
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Moderní a jednoduchý:</a><span> Aplikace má přehledný vzhled a je tak snadno ovladatelná pro každého.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Přizpůsobitelný:</a><span> Obsidian nabízí mnoho možností, jak si ji přizpůsobit podle svých představ.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                        
+                        <section class="section">
+                            <span class="font-bold text-4xl">Synchronizace poznámek</span>
+    
+                            <p class="paragraph mt-4">Pokud chcete mít přístup ke svým poznámkám na více zařízeních (například na mobilním telefonu a počítači), máte dvě možnosti:</p>
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">1. Placená synchronizace:</a><span> Můžete platit roční poplatek za špičkovou synchronizaci uloženou na zabezpečených serverech, která zajistí, že vaše poznámky budou vždy aktuální a v bezpečí.</span>
+                                    </div>
+                                </li>
+    
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">2. Jiné aplikace:</a><span> K synchronizaci poznámek můžete použít jiné služby, například iCloud, ale ty nemusí nabízet stejnou úroveň kvality a zabezpečení jako placená možnost Obsidianu.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+    
+                        <span class="relative flex justify-center">
+                            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+                          
+                            <span class="relative text-gray-500 font-bold z-10 bg-background px-6">Shrnutí</span>
+                        </span>
+    
+                        <section class="section">
+                            <p class="paragraph"><span class="font-bold">Obsidian</span> je fantastická aplikace pro udržování vašich poznámek v bezpečí, organizované a dostupné na všech vašich zařízeních. Je snadno použitelná pro začátečníky, ale nabízí také více možností pro ty, kteří si chtějí své prostředí více přizpůsobit.</p>    
+                        </section>
+    
+                        <section class="bg-zinc-900 shadow-md p-8 mb-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
+                            <p class="title-three"><a class="underline underline-offset-2 decoration-emerald-500 decoration-2">Klady</a></p>
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Vysoce přizpůsobitelný</p>
+                            </div>
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Volnost v organizaci poznámek</p>
+                            </div>
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Synchronizace napříč více zařízeními</p>
+                            </div>
+    
+                            <p class="title-three"><a class="underline underline-offset-2 decoration-red-500 decoration-2">Zápory</a></p>
+    
+                            <div role="alert" class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
+                                </svg>
+                                <span class="text-tooltip-container relative inline-block mx-1">
+                                    <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p class="text-sm font-semibold">Trvá déle, než si zvyknete na všechny funkce <sup class="font-bold">?</sup></p></span>
+                                    <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Přestože je Obsidian poměrně intuitivní, může chvíli trvat, než si na všechny jeho funkce zvyknete.</span>
+                                </span>   
+                            </div>
+                        </section>
+
+                        <section class="mt-32 pl-4">
+                            <p class="text-5xl font-bold mb-8">Kam dál?</p>
+                            <div class="my-2 max-w-max">
+                                <a href="https://youtube.com/playlist?list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd&feature=shared" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🎥 Videonávod (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://help.obsidian.md/Home" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    📖 Centrum nápovědy (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://forum.obsidian.md/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    💬 Podpora komunity (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://obsidian.md/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    👪 Dostupné plány předplatného
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <div class="content" id="level2">
+            <!-- Level 2 content goes here -->
+            
+            <div class="top-badges flex border-l-4 border-gray-700 border-opacity-75 justify-start p-4">
+    
+                <div class="badge-tooltip-container relative inline-block">
+                    <div>
+                        <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow">
+                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span class="badge-tooltip">Autor doporučuje</span>
+                </div>
+            
+                <div class="badge-tooltip-container relative inline-block">
+                    <div>
+                        <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#D7141A" d="M1.383 29.973A3.795 3.795 0 0 0 4 31h28c2.209 0 4-1.791 4-4.5V18H17.5L1.383 29.973z"></path><path fill="#EEE" d="M32 5H4a3.98 3.98 0 0 0-2.646 1.006L17.5 18H36V9a4 4 0 0 0-4-4z"></path><path fill="#11457E" d="M1.383 29.973L17.5 18L1.354 6.006A3.985 3.985 0 0 0 0 9v17.5c0 1.48.537 2.683 1.383 3.473z"></path></g></svg>
+                    </div>
+                    <span class="badge-tooltip">Podporuje češtinu</span>
+                </div>
+
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                            </svg>                      
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-24 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Finanční dostupnost:</li>
+                            <li class="pl-4 py-1">💰 Plně zdarma</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(Pokud chcete mít přístup ke svým poznámkám na více zařízeních, můžete se přihlásit k předplatnému, které vám umožní je synchronizovat.)</li>
+                            <li class="pl-4 py-1">🎓 Studentská sleva</li>
+                            <li class="pl-4 py-1">🚫 Bez reklam</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>  
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-32 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Na jakých zařízeních je program dostupný:</li>
+                            <li class="pl-4 py-1">✅ Android</li>
+                            <li class="pl-4 py-1">✅ Apple (iOS)</li>
+                            <li class="pl-4 py-1">✅ Windows</li>
+                            <li class="pl-4 py-1">✅ MacOS</li>
+                            <li class="pl-4 py-1">✅ Linux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                                                        
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-52 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Pokročilé možnosti:</li>
+                            <li class="pl-4 py-1">🛠️ Přizpůsobitelné</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="badge-tooltip-container flex relative group">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/lqxfrxad.json"
+                                trigger="loop-on-hover"
+                                state="loop-scale"
+                                colors="primary:#ffffff"
+                                style="width:30px;height:30px">
+                            </lord-icon>
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-64 sm:-left-2 mt-12 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Ostatní:</li>
+                            <li class="pl-4 py-1">🌐 Nevyžaduje internetové připojení</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(synchronizace samozřejmě ano)</li>
+                            <li class="pl-4 py-1">🔄 Pravidelné aktualizace</li>
+                            <li class="pl-4 py-1">💼 Komerční plán</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <span class="relative flex justify-center my-12">
+                <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+              
+                <span class="relative text-gray-500 font-bold z-10 bg-background px-6"></span>
+            </span>
+
+
+            <div class="flex justify-start text-md mt-0 lg:px-32 lg:pr-96">
+                <div class="text-lg">
+                    <div class="font-body text-md mt-12 pb-2">
+    
+                        <section class="section">
+                            <p class="title-two">Chcete superbezpečné, ale zároveň přívětivé a jednoduché místo pro své poznámky?</p>
+                            <p class="paragraph">Ideálním řešením je <span class="font-bold">Obsidian</span>. Tento bezplatný software, který můžete používat jak v mobilním telefonu, tak na počítači, je skvělou volbou, pokud chcete své poznámky v naprostém soukromí a zároveň je mít organizované.</p>    
+                        </section>
+    
+                        <section class="section">
+                            <span class="font-bold text-4xl">Klíčové body</span>
+    
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Zdarma:</a><span> Za základní funkce se neplatí.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Pro všechny platformy:</a><span> K dispozici na mobilních zařízeních i na počítačích.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ochrana osobních údajů:</a><span> Vaše poznámky jsou v naprostém soukromí.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+    
+                        <section class="section">
+                            <span class="font-bold text-4xl">Design a použitelnost</span>
+    
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-thin">Moderní a jednoduchý:</a><span> Aplikace má přehledný vzhled a je tak snadno ovladatelná pro každého.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Pokročilé přizpůsobení:</a>
+                                        <span> V případě, že chcete mít nad poznámkami větší kontrolu, můžete je upravovat pomocí  
+                                            <span class="text-tooltip-container relative inline-block mx-1">
+                                                <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400">HTML</span>
+                                                <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">"HypeTtext Markup Language" je standardní jazyk pro tvorbu webových stránek.</span>
+                                            </span>
+                                            a 
+                                            <span class="text-tooltip-container relative inline-block mx-1">
+                                                <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400">CSS</span>
+                                                <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">"Cascading Style Sheets" je standardní jazyk pro stylizování textu a ostatních prvků do stylu webových stránek.</span>
+                                            </span>
+                                            .</span>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </section>
+                        
+                        <section class="section">
+                            <span class="font-bold text-4xl">Synchronizace poznámek</span>
+    
+                            <p class="paragraph mt-4">Pokud chcete mít přístup ke svým poznámkám na více zařízeních, máte dvě možnosti:</p>
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">1. Placená synchronizace:</a><span> Můžete platit roční poplatek za bezpečnou synchronizaci uloženou na šifrovaných serverech, která zajistí, že stav vašich poznámek bude vždy aktuální a chráněný.</span>
+                                    </div>
+                                </li>
+    
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">2. Aplikace třetích stran:</a><span> K synchronizaci poznámek můžete použít jiné aplikace, jako jsou Syncthing nebo iCloud, které však nemusí poskytovat stejnou úroveň zabezpečení a spolehlivosti jako placená možnost Obsidianu.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <span class="font-bold text-4xl">Užitečné klávesové zkratky</span>
+
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + O |</a><span> Otevření poznámky</span>
+                                    </div>
+                                </li>
+    
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + Shift + F |</a><span> Hledání ve všech poznámkách</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + E |</a><span> Přepínání režimu náhled/úpravy</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + N |</a><span> Vytvoření nové poznámky</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + P |</a><span> Otevření příkazové nabídky</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+    
+                        <span class="relative flex justify-center">
+                            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+                          
+                            <span class="relative text-gray-500 font-bold z-10 bg-background px-6">Shrnutí</span>
+                        </span>
+    
+                        <section class="section">
+                            <p class="paragraph"><span class="font-bold">Obsidian</span> je fantastická aplikace pro bezpečné, organizované a dostupné poznámky na všech zařízeních. Je uživatelsky přívětivá pro začátečníky a nabízí pokročilé přizpůsobení pro ty, kteří chtějí mít větší kontrolu.</p>    
+                        </section>
+    
+                        <section class="bg shadow-md p-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
+                            <p class="title-three"><a class="underline underline-offset-2 decoration-emerald-500 decoration-2">Klady</a></p>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Vysoce přizpůsobitelný</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Volnost v organizaci poznámek</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Synchronizace napříč více zařízeními</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Koncové šifrování</p>
+                            </div>
+    
+                            <p class="title-three"><a class="underline underline-offset-2 decoration-red-500 decoration-2">Zápory</a></p>
+    
+                            <div role="alert" class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
+                                </svg>
+                                <span class="text-tooltip-container relative inline-block mx-1">
+                                    <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p class="text-sm font-semibold">Trvá déle, než si zvyknete na všechny funkce <sup class="font-bold">?</sup></p></span>
+                                    <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Přestože je Obsidian poměrně intuitivní, může chvíli trvat, než si na všechny jeho funkce zvyknete.</span>
+                                </span>   
+                            </div>
+                        </section>
+
+                        <section class="mt-32 pl-4"></section>
+                            <p class="text-5xl font-bold mb-8">Kam dál?</p>
+
+                            <span class="relative flex justify-center">
+                                <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+                              
+                                <span class="relative text-gray-500 font-bold z-10 bg-background px-6">Obsidian</span>
+                            </span>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://youtube.com/playlist?list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd&feature=shared" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🎥 Videonávod (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://help.obsidian.md/Home" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    📖 Centrum nápovědy (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://forum.obsidian.md/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    💬 Podpora komunity (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://obsidian.md/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    👪 Dostupné plány předplatného
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://discord.com/invite/obsidianmd" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🗣️ Discord server
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://www.reddit.com/r/ObsidianMD/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🟠 Reddit
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content" id="level3">
+            <!-- Level 3 content goes here -->
+            
+            <div class="top-badges flex border-l-4 border-gray-700 border-opacity-75 justify-start p-4">
+    
+                <div class="badge-tooltip-container relative inline-block">
+                    <div>
+                        <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow">
+                            <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <span class="badge-tooltip">Autor doporučuje</span>
+                </div>
+            
+                <div class="badge-tooltip-container relative inline-block">
+                    <div>
+                        <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#D7141A" d="M1.383 29.973A3.795 3.795 0 0 0 4 31h28c2.209 0 4-1.791 4-4.5V18H17.5L1.383 29.973z"></path><path fill="#EEE" d="M32 5H4a3.98 3.98 0 0 0-2.646 1.006L17.5 18H36V9a4 4 0 0 0-4-4z"></path><path fill="#11457E" d="M1.383 29.973L17.5 18L1.354 6.006A3.985 3.985 0 0 0 0 9v17.5c0 1.48.537 2.683 1.383 3.473z"></path></g></svg>
+                    </div>
+                    <span class="badge-tooltip">Podporuje češtinu</span>
+                </div>
+
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                            </svg>                      
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-24 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Finanční dostupnost:</li>
+                            <li class="pl-4 py-1">💰 Plně zdarma</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(Pokud chcete mít přístup ke svým poznámkám na více zařízeních, můžete se přihlásit k předplatnému, které vám umožní je synchronizovat.)</li>
+                            <li class="pl-4 py-1">🎓 Studentská sleva</li>
+                            <li class="pl-4 py-1">🚫 Bez reklam</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 hover:scale-110 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+                            </svg>  
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-32 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Na jakých zařízeních je program dostupný:</li>
+                            <li class="pl-4 py-1">✅ Android</li>
+                            <li class="pl-4 py-1">✅ Apple (iOS)</li>
+                            <li class="pl-4 py-1">✅ Windows</li>
+                            <li class="pl-4 py-1">✅ MacOS</li>
+                            <li class="pl-4 py-1">✅ Linux</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="badge-tooltip-container relative group inline-block">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <svg class="w-8 hover:rotate-12 transition ease-out duration-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                                                        
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-52 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Pokročilé možnosti:</li>
+                            <li class="pl-4 py-1">🛠️ Přizpůsobitelné</li>
+                            <li class="pl-4 py-1">🔧 Nástroje pro vývojáře</li>
+                            <li class="pl-4 py-1">⚙️ Pokročilá konfigurace</li>
+                            <li class="pl-4 py-1">🔌 Přístup k API</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="badge-tooltip-container flex relative group">
+                    <div class="rounded-full shadow-lg hover:cursor-pointer flex justify-center items-center gap-4">
+                        <div>
+                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                            <lord-icon
+                                src="https://cdn.lordicon.com/lqxfrxad.json"
+                                trigger="loop-on-hover"
+                                state="loop-scale"
+                                colors="primary:#ffffff"
+                                style="width:30px;height:30px">
+                            </lord-icon>
+                        </div>
+                    </div>
+                  
+                    <div class="tooltip absolute -left-64 sm:-left-2 mt-12 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
+                        <ul class="p-4 space-y-1">
+                            <li class="py-1 font-bold">Ostatní:</li>
+                            <li class="pl-4 py-1">🌐 Nevyžaduje internetové připojení</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(synchronizace samozřejmě ano)</li>
+                            <li class="pl-4 py-1">🔄 Pravidelné aktualizace</li>
+                            <li class="pl-4 py-1">💼 Komerční plán</li>
+                            <li class="pl-4 py-1">🐙 Open-Source</li>
+                            <li class="pl-4 py-1">🔒 End-to-End šifrování</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <span class="relative flex justify-center my-12">
+                <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+              
+                <span class="relative text-gray-500 font-bold z-10 bg-background px-6"></span>
+            </span>
+
+
+            <div class="flex justify-start text-md mt-0 lg:px-32 lg:pr-96">
+                <div class="text-lg">
+                    <div class="font-body text-md mt-12 pb-2">
+    
+                        <section class="section">
+                            <p class="title-two">Chcete superbezpečné, ale zároveň přívětivé a jednoduché místo pro své poznámky?</p>
+                            <p class="paragraph">Dokonalým řešením této kombinace je <span class="font-bold">Obsidian</span>. Tento bezplatný software, který můžete používat jak v mobilu, tak na počítači, je skvělou volbou, pokud chcete mít své poznámky v naprostém soukromí a zároveň je mít organizované.</p>    
+                        </section>
+    
+                        <section class="section">
+                            <span class="font-bold text-4xl">Klíčové body</span>
+    
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Zdarma:</a><span> Za základní funkce se neplatí.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Cross-Platform:</a><span> K dispozici na mobilních zařízeních i na počítačích.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ochrana osobních údajů:</a><span> Vaše poznámky jsou v naprostém soukromí.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+    
+                        <section class="section">
+                            <span class="font-bold text-4xl">Design a použitelnost</span>
+    
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-thin">Moderní a intuitivní:</a><span> Aplikace má přehledný design, který usnadňuje její používání všem uživatelům.</span>
+                                    </div>
+                                </li>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Pokročilé přizpůsobení:</a>
+                                        <span> Pomocí CSS a HTML si můžete poznámky rozsáhle přizpůsobit a vytvořit tak vysoce personalizované prostředí.</span>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </section>
+                        
+                        <section class="section">
+                            <span class="font-bold text-4xl">Synchronizace poznámek</span>
+    
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">1. Servery s koncovým šifrováním:</a><span> Můžete platit roční poplatek za bezpečnou synchronizaci uloženou na šifrovaných serverech, která zajistí, že stav vašich poznámek bude vždy aktuální a chráněný.</span>
+                                    </div>
+                                </li>
+    
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">2. Aplikace třetích stran:</a><span> K synchronizaci poznámek můžete použít jiné aplikace, jako jsou Syncthing nebo iCloud, které však nemusí poskytovat stejnou úroveň zabezpečení a spolehlivosti jako placená možnost Obsidianu.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <span class="font-bold text-4xl">Užitečné klávesové zkratky</span>
+
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + O |</a><span> Otevření poznámky</span>
+                                    </div>
+                                </li>
+    
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + Shift + F |</a><span> Hledání ve všech poznámkách</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + E |</a><span> Přepínání režimu náhled/úpravy</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + N |</a><span> Vytvoření nové poznámky</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + P |</a><span> Otevření příkazové nabídky</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+    
+                        <span class="relative flex justify-center">
+                            <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+                          
+                            <span class="relative text-gray-500 font-bold z-10 bg-background px-6">Shrnutí</span>
+                        </span>
+    
+                        <section class="section">
+                            <p class="paragraph"><span class="font-bold">Obsidian</span> je fantastická aplikace pro bezpečné, organizované a dostupné poznámky na všech zařízeních. Je uživatelsky přívětivá pro začátečníky a nabízí pokročilé přizpůsobení a funkce pro ty, kteří chtějí mít nad vším větší kontrolu.</p>    
+                        </section>
+    
+                        <section class="bg shadow-md p-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
+                            <p class="title-three"><a class="underline underline-offset-2 decoration-emerald-500 decoration-2">Klady</a></p>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Vysoce přizpůsobitelný</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Volnost v organizaci poznámek</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Synchronizace napříč více zařízeními s šifrováním E2E</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Široká škála pluginů komunity</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Možnost zveřejnit poznámky jako webové stránky</p>
+                            </div>
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                </svg>      
+                                <p class="text-sm font-semibold">Pokročilé vyhledávání v poznámkách</p>
+                            </div>
+    
+                            <p class="title-three"><a class="underline underline-offset-2 decoration-red-500 decoration-2">Zápory</a></p>
+    
+                            <div role="alert" class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
+                                </svg>
+                                <span class="text-tooltip-container relative inline-block mx-1">
+                                    <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p class="text-sm font-semibold">Trvá déle, než si zvyknete na všechny funkce <sup class="font-bold">?</sup></p></span>
+                                    <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Přestože je Obsidian poměrně intuitivní, může chvíli trvat, než si na všechny jeho funkce zvyknete.</span>
+                                </span>   
+                            </div>
+                        </section>
+
+                        <section class="mt-32 pl-4">
+                            <p class="text-5xl font-bold mb-8">Kam dál?</p>
+
+                            <span class="relative flex justify-center">
+                                <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
+                              
+                                <span class="relative text-gray-500 font-bold z-10 bg-background px-6">Obsidian</span>
+                            </span>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://youtube.com/playlist?list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd&feature=shared" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🎥 Videonávod (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://help.obsidian.md/Home" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    📖 Centrum nápovědy (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://forum.obsidian.md/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    💬 Podpora komunity (ANGLICKY)
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://obsidian.md/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    👪 Dostupné plány předplatného
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://discord.com/invite/obsidianmd" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🗣️ Discord server
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://www.reddit.com/r/ObsidianMD/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🟠 Reddit
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://www.zsolt.blog/2021/05/obsidian-performance-test-take-1.html" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    📈 Měření výkonnosti
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://obsidian.md/terms" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    📜 Podmínky služby
+                                </a>
+                            </div>
+
+                            <div class="my-2 max-w-max">
+                                <a href="https://obsidian.md/privacy" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🔒 Zásady ochrany osobních údajů
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-background mt-32 lg:grid lg:grid-cols-5">
+        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+          <img
+            src="/img/banner_1.png"
+            alt=""
+            class="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      
+        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div>
+              <p>
+                <span class="text-xs uppercase tracking-wide text-primary"> Kontakt </span>
+      
+                <a href="#" class="block text-2xl font-medium text-primary hover:opacity-75 sm:text-3xl">
+                  info@czechyourtech.cz
+                </a>
+              </p>
+      
+              <ul class="mt-8 space-y-1 text-sm text-primary">
+                <li>Chraňte se online – snadno a bezpečně.</li>
+              </ul>
+      
+              <ul class="mt-8 flex gap-6">
+      
+                <li>
+                  <a
+                    href="https://instagram.com/czechyourtech/"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-primary transition hover:opacity-75"
+                  >
+                    <span class="sr-only">Instagram</span>
+      
+                    <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+      
+                <li>
+                  <a
+                    href="https://github.com/scorpixter/CzechYourTech"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-primary transition hover:opacity-75"
+                  >
+                    <span class="sr-only">GitHub</span>
+      
+                    <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <p class="font-medium text-primary">Služby</p>
+      
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a href="#" class="text-primary transition hover:opacity-75"> Individuální hovor </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-primary transition hover:opacity-75"> PDF Dokumenty </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-primary transition hover:opacity-75"> Pomoc se softwarem </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-primary transition hover:opacity-75"> SEO Optimalizace </a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div>
+                <p class="font-medium text-primary">Projekt</p>
+      
+                <ul class="mt-6 space-y-4 text-sm">
+                  <li>
+                    <a href="/about" class="text-primary transition hover:opacity-75"> O projektu </a>
+                  </li>
+      
+                  <li>
+                    <a href="/contact" class="text-primary transition hover:opacity-75"> Kontakt </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-primary transition hover:opacity-75"> Blog </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="mt-12 border-t border-primary pt-12">
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <ul class="flex flex-wrap gap-4 text-xs">
+                <li>
+                  <a href="#" class="text-primary transition hover:opacity-75"> Terms & Conditions </a>
+                </li>
+      
+                <li>
+                  <a href="#" class="text-primary transition hover:opacity-75"> Privacy Policy </a>
+                </li>
+      
+                <li>
+                  <a href="#" class="text-primary transition hover:opacity-75"> Cookies </a>
+                </li>
+              </ul>
+      
+              <p class="mt-8 text-xs text-primary sm:mt-0">
+                &copy; 2024. CzechYourTech. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</div>
+
+<script src="/index.js?v=1.0.2"></script>
+<script src="/levels.js?v=1.0.2"></script>
+
+</body>
+</html>
