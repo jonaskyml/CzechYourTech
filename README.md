@@ -34,7 +34,6 @@ This project is not currently licensed under any specific open-source license. H
 
 For any inquiries, suggestions, or collaboration requests, feel free to reach out:
 
-- **Personal Contact**: [jonas.confess251@passinbox.com](mailto:jonas.confess251@passinbox.com)
 - **LinkedIn**: [Jonáš Kyml](https://www.linkedin.com/in/jonas-kyml)
 - **Website Support**: [info@czechyourtech.cz](mailto:info@czechyourtech.cz)
 
