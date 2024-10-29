@@ -5,7 +5,8 @@ module.exports = {
     './*.html',     // Any other HTML files in the root directory
     './*.css',      // Any CSS files in the root directory
     './src/**/*.{html,js,jsx,ts,tsx}', // All files in src directory with specified extensions
-    './articles/**/*.html'
+    './articles/**/*.html',
+    './legal/**/*.html'
   ],
   theme: {
     extend: {
