@@ -20,7 +20,7 @@ function switchContent(level) {
 
     // Update meta tags and URL
     updateMetaTags(level);
-    history.pushState(null, '', '/article-about-x/level' + level);
+    // history.pushState(null, '', '/article-about-x/level' + level);
 }
 
 function updateMetaTags(level) {
