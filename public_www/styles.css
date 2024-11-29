@@ -2420,6 +2420,13 @@ video {
   }
 }
 
+.header-image-proton {
+  background-image: url('/public_www/img/article/header-image/proton/unnamed.webp'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the element */
+  background-position: end; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+}
+
 /* From Uiverse.io by ElSombrero2 */
 
 .flash-card {
