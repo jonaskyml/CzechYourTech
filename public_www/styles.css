@@ -2116,7 +2116,6 @@ video {
 
 .bigbtn:hover {
   padding-right: 36px;
-  /* Adjust this value to add space for the arrow */
 }
 
 .bigbtn:hover .arrow {
@@ -2125,7 +2124,6 @@ video {
 
 .bigbtn:active .arrow {
   transform: translateX(30px);
-  /* Adjust this value to move the arrow to the right */
 }
 
 .level-btn{
@@ -2332,7 +2330,6 @@ video {
   list-style-type: none;
   font-size: 1rem;
   line-height: 1.5rem;
-  /* Ensures no default list styles */
 }
 
 .section{
@@ -2418,9 +2415,9 @@ video {
 
 .header-image-proton {
   background-image: url('/public_www/img/article/header-image/proton/header-image-proton.png'); /* Your image */
-  background-size: cover; /* Fit the image inside the container without cropping */
-  background-position: center center; /* Center the image in the container */
-  background-repeat: no-repeat; /* Prevent repeating */
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
   aspect-ratio: auto;
   height: 16rem;
   width: 100vw;
@@ -2428,9 +2425,9 @@ video {
 
 .header-image-obsidian {
   background-image: url('/public_www/img/article/header-image/obsidian/header-image-obsidian.png'); /* Your image */
-  background-size: cover; /* Fit the image inside the container without cropping */
-  background-position: center center; /* Center the image in the container */
-  background-repeat: no-repeat; /* Prevent repeating */
+  background-size: cover;
+  background-position: center center; 
+  background-repeat: no-repeat; 
   aspect-ratio: auto;
   height: 16rem;
   width: 100vw;
@@ -2655,15 +2652,12 @@ video {
   top: 0;
   width: 100%;
   z-index: 1000;
-  /* Adjust z-index as needed */
   transition: background-color 0.5s, box-shadow 0.5s, border-color 0.5s;
 }
 
 .scrolled {
   background-color: black;
-  /* Ensure the background is opaque */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Optional: add some shadow for better visibility */
   border-bottom: 1px;
   border-style: solid;
   border-color: rgb(57, 57, 57);

@@ -12,10 +12,23 @@
     <link rel="icon" type="image/png" href="img/y_favicon.png?v=1.0.1">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=1.0.10">
-    <style>
-        /* Additional styles if needed */
-        /* Example: .full-width overrides */
-    </style>
+    
+    <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> 
+
+  <!-- lenis config -->
+  <script defer>
+    const lenis = new Lenis({
+      duration: 0.5,
+      easing: (t) => 1 - (1 - t) * (1 - t), // ease out
+      direction: 'vertical',
+      smooth: true
+    });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
 </head>
 <body class="text-primary font-body bg-background">
 
