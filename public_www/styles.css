@@ -2363,49 +2363,59 @@ video {
   align-items: flex-start;
   font-size: 1rem;
   line-height: 1.5rem;
-  /* Align items to the top */
 }
 
 .bullet-point svg{
   flex-shrink: 0;
   --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  /* Prevent the SVG from shrinking */
 }
 
 .text-content {
   display: flex;
   flex-wrap: wrap;
-  /* Allow text to wrap when needed */
   flex: 1;
   align-items: center;
-  /* Align the text vertically with the SVG */
 }
 
 .text-content a{
   font-weight: 700;
-  /* Ensure the <a> is bold */
   margin-right: 4px;
-  /* Add a small margin between the <a> and the colon */
 }
 
 .text-content span {
   display: inline;
-  /* Keep span inline to stay on the same line as <a> */
+}
+
+.header-image-proton {
+  background-image: url('/public_www/img/article/header-image/proton/header-image-proton.png'); /* Your image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  aspect-ratio: auto;
+  height: 16rem;
+  width: 100vw;
+}
+
+.header-image-obsidian {
+  background-image: url('/public_www/img/article/header-image/obsidian/header-image-obsidian.png'); /* Your image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  aspect-ratio: auto;
+  height: 16rem;
+  width: 100vw;
 }
 
 @media (max-width: 768px) {
   .text-content {
     flex-direction: column;
-    /* Stack the text vertically on smaller screens */
     align-items: flex-start;
-    /* Align text to the start of the column */
   }
 
   .text-content a,
   .text-content span {
     margin-left: 0;
-    /* Remove margin on smaller screens to prevent text shifting */
   }
 }
 
