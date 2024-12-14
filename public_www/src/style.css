@@ -2249,7 +2249,6 @@ video {
   position: relative;
   display: inline-block;
   margin: 2px;
-  z-index: 10;
 }
 
 .text-containing-tooltip {
@@ -2261,13 +2260,13 @@ video {
   top: 200%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
   background: #333;
   padding: 10px;
   border-radius: 8px;
   transition: opacity 0.3s, visibility 0.3s, top 0.3s, background 0.3s;
-  z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -2334,7 +2333,7 @@ video {
   font-size: 1rem;
   line-height: 1.5rem;
   position: relative;
-  z-index: 1;
+  z-index: auto;
 }
 
 .section{
