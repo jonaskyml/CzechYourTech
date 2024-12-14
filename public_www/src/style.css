@@ -2395,6 +2395,26 @@ video {
   /* Keep span inline to stay on the same line as <a> */
 }
 
+.header-image-proton {
+  background-image: url('/img/article/header-image/proton/header-image-proton.png'); /* Your image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  aspect-ratio: auto;
+  height: 16rem;
+  width: 100vw;
+}
+.header-image-obsidian {
+  background-image: url('/img/article/header-image/obsidian/header-image-obsidian.png'); /* Your image */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  aspect-ratio: auto;
+  height: 16rem;
+  width: 100vw;
+  /* Keep span inline to stay on the same line as <a> */
+}
+
 @media (max-width: 768px) {
   .text-content {
     flex-direction: column;
