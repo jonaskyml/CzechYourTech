@@ -9,7 +9,7 @@ let availableKeywords = [
     },
     {
         text: 'Proton: Nejspolehlivější e-mail poskytovatel a mnoho dalšího',
-        url: 'sblog/proton.html'
+        url: 'blog/proton.html'
     },
 ];
 
