@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Objevte služby Proton od švýcarské společnosti Proton AG, které se zaměřují na ochranu soukromí a bezpečnost na internetu. Využijte šifrování e-mailů, VPN a další nástroje pro bezpečnou a soukromou online komunikaci." />
+    <meta name="description" content="Naučte se používat Obsidian pro organizaci poznámek, zvládnutí funkce markdown a zvýšení produktivity pomocí pokročilých funkcí a tipů.">
     <meta name="author" content="Jonáš Kyml">
 
-    <title>Proton | CzechYourTech Blog</title>
+    <title>Obsidian | CzechYourTech Blog</title>
 
     <link rel="icon" type="image/png" href="/img/y_favicon.png?v=1.0.1">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -56,6 +56,7 @@
   }
   requestAnimationFrame(raf);
 </script>
+
 </head>
 <body class="text-primary font-body bg-background">
 
@@ -100,25 +101,25 @@
     </div><!-- end nav -->
 
     <main class="px-8 py-6 mt-32 relative">
-        <div class="absolute inset-x-0 p-2 md:p-20 header-image-proton">
+        <div class="absolute header-image-obsidian inset-x-0 p-2 md:p-20">
             <div class="relative group inline-block p-3">
                 <div class="font-h1 font-bold text-primary text-sm uppercase transform translate-y-4 translate-x-2">
-                    Jonáš Kyml 28. listopadu 2024
+                    Jonáš Kyml 12. září 2024
                 </div>
               
                 <div class="tooltip absolute left-2 sm:left-60 transform sm:-translate-y-44 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
                     <ul class="p-4 space-y-1">
                         <li class="py-1 text-gray-500 font-bold">Poprvé zveřejněno:</li>
-                        <li class="pl-8 py-1 text-gray-500 font-normal">28. LISTOPADU 2024</li>
+                        <li class="pl-8 py-1 text-gray-500 font-normal">2. SRPNA 2024</li>
                         <li class="py-1 text-gray-500 font-bold">Naposledy upraveno:</li>
-                        <li class="pl-8 py-1 text-gray-500 font-normal">28. LISTOPADU 2024</li>
+                        <li class="pl-8 py-1 text-gray-500 font-normal">12. ZÁŘÍ 2024</li>
                     </ul>
                 </div>
             </div>
 
             
             <h1 class="text-white text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-h1 font-extrabold p-4">
-                PROTON
+                OBSIDIAN
             </h1>
 
             <!-- <div class="image-wrappe flex justify-end">
@@ -126,7 +127,7 @@
             </div> -->
         </div>      
 
-        <div class="button-group flex justify-center mt-72 lg:mt-96 text-xs md:text-base">
+        <div class="button-group flex justify-center mt-64 lg:mt-96 text-xs md:text-base">
             <button class="level-one level-btn bg-gray-500 border-gray-400" onclick="switchContent(1)">Úroveň 1</button>
             <button class="level-two level-btn bg-blue-500 border-blue-400" onclick="switchContent(2)">Úroveň 2</button>
             <button class="level-three level-btn bg-red-500 border-red-400" onclick="switchContent(3)">Úroveň 3</button>
@@ -165,9 +166,9 @@
                     <div class="tooltip absolute -left-24 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
                         <ul class="p-4 space-y-1">
                             <li class="py-1 font-bold">Finanční dostupnost:</li>
-                            <li class="pl-4 py-1">💲 Bezplatný plán s možností vylepšení</li>
+                            <li class="pl-4 py-1">💰 Plně zdarma</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(Pokud chcete mít přístup ke svým poznámkám na více zařízeních, můžete se přihlásit k předplatnému, které vám umožní je synchronizovat.)</li>
                             <li class="pl-4 py-1">🎓 Studentská sleva</li>
-                            <li class="pl-4 py-1">👨‍👩‍👧‍👦 Rodinný plán</li>
                             <li class="pl-4 py-1">🚫 Bez reklam</li>
                         </ul>
                     </div>
@@ -190,7 +191,6 @@
                             <li class="pl-4 py-1">✅ Windows</li>
                             <li class="pl-4 py-1">✅ MacOS</li>
                             <li class="pl-4 py-1">✅ Linux</li>
-                            <li class="pl-4 py-1">✅ Web-App</li>
                         </ul>
                     </div>
                 </div>
@@ -212,8 +212,8 @@
                     <div class="tooltip absolute -left-52 sm:-left-2 mt-12 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
                         <ul class="p-4 space-y-1">
                             <li class="py-1 font-bold">Ostatní:</li>
-                            <li class="pl-4 py-1">🔐 Rodičovská kontrola</li>
-                            <li class="pl-8 py-1 text-gray-500 font-normal">(s rodinným plánem můžete vytvořit účty pro své děti a mít k nim přístup)</li>
+                            <li class="pl-4 py-1">🌐 Nevyžaduje internetové připojení</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(synchronizace samozřejmě ano)</li>
                         </ul>
                     </div>
                 </div>
@@ -232,29 +232,20 @@
                     <div class="font-body text-md mt-12 pb-2">
     
                         <section class="section">
-                            <p class="title-two"><span class="font-bold">Proton</span> je vynikající volbou, pokud vám záleží na tom, aby vaše aktivita na internetu zůstala soukromá. Proton&nbsp;AG sídlí ve Švýcarsku a využívá přísných zákonů na ochranu osobních údajů, takže vaše data zůstanou v bezpečí. Nabízí několik služeb, které pomáhají chránit vaše e-maily, soubory a mnoho dalšího.</p>    
+                            <p class="title-two">Chcete superbezpečné, ale zároveň přívětivé a jednoduché místo pro své poznámky?</p>
+                            <p class="paragraph">Ideálním řešením je <span class="font-bold">Obsidian</span>. Tento bezplatný software funguje jak v mobilním telefonu, tak v počítači. Je skvělou volbou, pokud chcete mít své poznámky naprosto soukromé a organizované.</p>    
                         </section>
     
                         <section class="section">
-                            <span class="font-bold text-4xl mb-8">Hlavní služby společnosti Proton AG</span><br>
+                            <span class="font-bold text-4xl">Klíčové body</span>
     
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Mail</span>
-                           
-
                             <ul class="paragraph">
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Zabezpečené e-maily:</a>
-                                        
-                                        <span class="text-tooltip-container relative inline-block mx-1">
-                                            <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p>Vaše e-maily jsou chráněny, abyste si je mohli přečíst pouze vy a osoba, které je posíláte.<sup class="font-bold">?</sup></p></span>
-                                            <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Na rozdíl od společností Google nebo Microsoft, které mají přístup ke všem vašim údajům a mohou je poskytnout komukoli, kdo jim dobře zaplatí.</span>
-                                        </span>   
-                                        
-                                        
+                                        <a class="font-medium">Zdarma:</a><span> Za používání základních funkcí nemusíte platit.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
@@ -262,12 +253,7 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Samozničující se e-maily:</a>
-
-                                        <span class="text-tooltip-container relative inline-block mx-1">
-                                            <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p>E-maily můžete nastavit tak, aby se po určité době odstranily.<sup class="font-bold">?</sup></p></span>
-                                            <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Tím je zajištěno, že i když se někdo přihlásí k vašemu účtu nebo účtu příjemce, nebude si moci e-mail přečíst.</span>
-                                        </span>   
+                                        <a class="font-medium">Dostupný na všech zařízeních:</a><span> Funguje na mobilních telefonech i počítačích.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
@@ -275,166 +261,14 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">E-maily chráněné heslem:</a><span> Dodatečné zabezpečení můžete zvýšit tím, že k otevření e-mailu budete vyžadovat heslo.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">E-mailové aliasy:</a>
-
-                                        <span class="text-tooltip-container relative inline-block mx-1">
-                                            <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p>Můžete používat alternativní e-mailové adresy, které zprávy přeposílají na váš hlavní účet.<sup class="font-bold">?</sup></p></span>
-                                            <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Pro ochranu vaší skutečné e-mailové adresy před cílenou reklamou a dalšími nežádoucími osobami.</span>
-                                        </span>  
-                                    </div>
-                                </li>
-                            </ul>
-
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Drive</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Bezpečné internetové úložiště:</a>
-                                        
-                                        <span>S 5 GB volného prostoru a větším místem při zakoupení.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Chráněné sdílení souborů:</a>
-
-                                        <span class="text-tooltip-container relative inline-block mx-1">
-                                            <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p>Soubory můžete sdílet s ostatními pomocí zabezpečených odkazů.<sup class="font-bold">?</sup></p></span>
-                                            <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Odkaz můžete chránit heslem a nastavit datum vypršení platnosti, po jehož uplynutí odkaz přestane fungovat.</span>
-                                        </span>   
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Anonymní přístup:</a><span> Lidé mohou stahovat vaše sdílené soubory, aniž by potřebovali účet Proton.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton VPN</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Bezplatné a placené možnosti:</a>
-                                        
-                                        <span>Můžete používat VPN Proton zdarma nebo přejít na placenou verzi a získat lepší funkce.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Kill Switch:</a>
-
-                                        <span>Udržuje vaši polohu v soukromí tím, že vás v případě výpadku připojení VPN odpojí od internetu.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Pass</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Správce hesel:</a>
-                                        
-                                        <span>Uložení a automatické vyplňování hesel.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Generátor hesel:</a>
-
-                                        <span>Vytvářejte silná a jedinečná hesla.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Správa aliasů:</a>
-
-                                        <span>Sledujte své e-mailové aliasy.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Calendar</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Soukromý kalendář:</a>
-                                        
-                                        <span>Váš denní rozvrh zůstane soukromý díky šifrovanému kalendáři.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Snadné nastavení:</a>
-
-                                        <span>Své události můžete snadno přenést z Google kalendáře a používat v Proton kalendáři.</span>
+                                        <a class="font-medium">Ochrana osobních údajů:</a><span> Vaše poznámky jsou v naprostém soukromí.</span>
                                     </div>
                                 </li>
                             </ul>
                         </section>
     
                         <section class="section">
-                            <span class="font-bold text-4xl">Rodinné a firemní plány</span>
+                            <span class="font-bold text-4xl">Design a použitelnost</span>
     
                             <ul class="paragraph">
                                 <li class="bullet-point">
@@ -442,7 +276,7 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Rodinný plán:</a><span> Sdílejte velké úložiště a ochranné funkce až se 6 členy rodiny.</span>
+                                        <a class="font-medium">Moderní a jednoduchý:</a><span> Aplikace má přehledný vzhled a je tak snadno ovladatelná pro každého.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
@@ -450,36 +284,26 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Firemní plán:</a><span> Extra funkce, jako jsou vlastní e-mailové domény a rychlejší podpora.</span>
+                                        <a class="font-medium">Přizpůsobitelný:</a><span> Obsidian nabízí mnoho možností, jak si ji přizpůsobit podle svých představ.</span>
                                     </div>
                                 </li>
                             </ul>
                         </section>
                         
                         <section class="section">
-                            <span class="font-bold text-4xl">Placené funkce</span>
+                            <span class="font-bold text-4xl">Synchronizace poznámek</span>
     
-                            
+                            <p class="paragraph mt-4">Pokud chcete mít přístup ke svým poznámkám na více zařízeních (například na mobilním telefonu a počítači), máte dvě možnosti:</p>
                             <ul class="paragraph">
                                 <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Více úložného prostoru:</a><span> Získejte až 500 GB úložiště pro jednotlivce s placenými plány Proton.</span>
+                                        <a class="font-medium">1. Placená synchronizace:</a><span> Můžete platit roční poplatek za špičkovou synchronizaci uloženou na zabezpečených serverech, která zajistí, že vaše poznámky budou vždy aktuální a v bezpečí.</span>
                                     </div>
                                 </li>
+    
                                 <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Více zabezpečení:</a>
-
-                                        <span class="text-tooltip-container relative inline-block mx-1">
-                                            <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p>Chraňte se pomocí funkcí, jako například sledování dark webu.<sup class="font-bold">?</sup></p></span>
-                                            <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Proton vás upozorní, pokud se stanete součástí cíle hackerů a dojde k úniku vašich osobních údajů.</span>
-                                        </span>  
+                                        <a class="font-medium">2. Jiné aplikace:</a><span> K synchronizaci poznámek můžete použít jiné služby, například iCloud, ale ty nemusí nabízet stejnou úroveň kvality a zabezpečení jako placená možnost Obsidianu.</span>
                                     </div>
                                 </li>
                             </ul>
@@ -492,87 +316,67 @@
                         </span>
     
                         <section class="section">
-                            <p class="paragraph"><span class="font-bold">Proton je ideální, pokud chcete udržet své online aktivity v soukromí. Nabízí služby elektronické pošty, ukládání souborů a další možnosti, a to vše s vysokou úrovní zabezpečení. Ať už jste jednotlivec, rodina nebo firma, Proton má pro vás vhodný plán.</p>    
+                            <p class="paragraph"><span class="font-bold">Obsidian</span> je fantastická aplikace pro udržování vašich poznámek v bezpečí, organizované a dostupné na všech vašich zařízeních. Je snadno použitelná pro začátečníky, ale nabízí také více možností pro ty, kteří si chtějí své prostředí více přizpůsobit.</p>    
                         </section>
     
                         <section class="bg-zinc-900 shadow-md p-8 mb-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
                             <p class="title-three"><a class="underline underline-offset-2 decoration-emerald-500 decoration-2">Klady</a></p>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <p class="text-sm font-semibold">VPN zdarma</p>
+                                <p class="text-sm font-semibold">Vysoce přizpůsobitelný</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class=""><p class="text-sm font-semibold">Silné šifrování pro všechno</p></span>
-                                    <!-- <span class="text-tooltip flex justify-center text-xs sm:w-44 transform -translate-x-10">koncové šifrování</span> -->
-                                </span>  
+                                <p class="text-sm font-semibold">Volnost v organizaci poznámek</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class="text-containing-tooltip text-sm font-semibold">Švýcarská ochrana soukromí</span>
-                                    <!-- <span class="text-tooltip flex justify-center text-xs sm:w-44 transform -translate-x-10">Proton AG sídlí ve Švýcarsku, které je známé svými přísnými zákony na ochranu osobních údajů.</span> -->
-                                </span>
-                            </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
-                                </svg>      
-                                <p class="text-sm font-semibold">Inovativní a snadno použitelný</p>
+                                <p class="text-sm font-semibold">Synchronizace napříč více zařízeními</p>
                             </div>
     
                             <p class="title-three"><a class="underline underline-offset-2 decoration-red-500 decoration-2">Zápory</a></p>
     
-                            <div class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
+                            <div role="alert" class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
                                 </svg>
                                 <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class=""><p class="text-sm font-semibold">Bezplatné plány mají více omezené úložiště</p></span>
-                                    <!-- <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">méně úložiště než Google nebo Microsoft</span> -->
+                                    <span class=""><p class="text-sm font-semibold">Trvá déle, než si zvyknete na všechny funkce</p></span>
+                                    <!-- <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Přestože je Obsidian poměrně intuitivní, může chvíli trvat, než si na všechny jeho funkce zvyknete.</span> -->
                                 </span>   
                             </div>
                         </section>
 
                         <section class="mt-32 pl-4">
                             <p class="text-5xl font-bold mb-8">Kam dál?</p>
-
-                            <span class="relative flex justify-center">
-                                <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"></div>
-                              
-                                <span class="relative text-gray-500 font-bold z-10 bg-background px-6">Obsidian</span>
-                            </span>
-
                             <div class="my-2 max-w-max">
-                                <a href="https://youtu.be/68SpKcnyPSE?si=Bcc4U2mixxXHWSRe" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://youtube.com/playlist?list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd&feature=shared" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     🎥 Videonávod (ANGLICKY)
                                 </a>
                             </div>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://proton.me/support" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://help.obsidian.md/Home" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     📖 Centrum nápovědy (ANGLICKY)
                                 </a>
                             </div>
 
-                            <div class="mt-8 my-2 max-w-max">
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p class="text-sm font-semibold">
-                                        
-                                        <a href="https://proton.me/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                            👪 Dostupné plány předplatného
-                                        </a>
+                            <div class="my-2 max-w-max">
+                                <a href="https://forum.obsidian.md/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    💬 Podpora komunity (ANGLICKY)
+                                </a>
+                            </div>
 
-                                        <sup class="font-bold">?</sup></p></span>
-                                    <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Můžete si také koupit prémiový plán pro každý z produktů Proton zvlášť, což znamená, že nemusíte platit Proton Unlimited, pokud chcete využívat pouze výhody jedné ze služeb.</span>
-                                </span>  
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://obsidian.md/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    👪 Dostupné plány předplatného
+                                </a>
                             </div>
                         </section>
                     </div>
@@ -614,9 +418,9 @@
                     <div class="tooltip absolute -left-24 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
                         <ul class="p-4 space-y-1">
                             <li class="py-1 font-bold">Finanční dostupnost:</li>
-                            <li class="pl-4 py-1">💲 Bezplatný plán s možností vylepšení</li>
+                            <li class="pl-4 py-1">💰 Plně zdarma</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(Pokud chcete mít přístup ke svým poznámkám na více zařízeních, můžete se přihlásit k předplatnému, které vám umožní je synchronizovat.)</li>
                             <li class="pl-4 py-1">🎓 Studentská sleva</li>
-                            <li class="pl-4 py-1">👨‍👩‍👧‍👦 Rodinný plán</li>
                             <li class="pl-4 py-1">🚫 Bez reklam</li>
                         </ul>
                     </div>
@@ -639,7 +443,6 @@
                             <li class="pl-4 py-1">✅ Windows</li>
                             <li class="pl-4 py-1">✅ MacOS</li>
                             <li class="pl-4 py-1">✅ Linux</li>
-                            <li class="pl-4 py-1">✅ Web-App</li>
                         </ul>
                     </div>
                 </div>
@@ -680,8 +483,8 @@
                     <div class="tooltip absolute -left-64 sm:-left-2 mt-12 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
                         <ul class="p-4 space-y-1">
                             <li class="py-1 font-bold">Ostatní:</li>
-                            <li class="pl-4 py-1">🔐 Rodičovská kontrola</li>
-                            <li class="pl-8 py-1 text-gray-500 font-normal">(s rodinným plánem můžete vytvořit účty pro své děti a mít k nim přístup)</li>
+                            <li class="pl-4 py-1">🌐 Nevyžaduje internetové připojení</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(synchronizace samozřejmě ano)</li>
                             <li class="pl-4 py-1">🔄 Pravidelné aktualizace</li>
                             <li class="pl-4 py-1">💼 Komerční plán</li>
                         </ul>
@@ -702,29 +505,20 @@
                     <div class="font-body text-md mt-12 pb-2">
     
                         <section class="section">
-                            <p class="title-two"><span class="font-bold">Proton</span> je skvělou volbou pro ty, kteří si cení svého digitálního soukromí, neboť nabízí celou řadu služeb, jejichž cílem je zajistit bezpečnost vašich dat. Společnost Proton sídlí ve Švýcarsku a využívá tamních přísných zákonů na ochranu soukromí, které zajišťují, že vaše data jsou dobře chráněna. Společnost Proton AG, známá svým důrazem na ochranu soukromí uživatelů, neustále inovuje a udržuje blízký vztah se svými uživateli.</p>    
+                            <p class="title-two">Chcete superbezpečné, ale zároveň přívětivé a jednoduché místo pro své poznámky?</p>
+                            <p class="paragraph">Ideálním řešením je <span class="font-bold">Obsidian</span>. Tento bezplatný software, který můžete používat jak v mobilním telefonu, tak na počítači, je skvělou volbou, pokud chcete své poznámky v naprostém soukromí a zároveň je mít organizované.</p>    
                         </section>
     
                         <section class="section">
-                            <span class="font-bold text-4xl mb-8">Klíčové služby poskytované společností Proton AG</span><br>
+                            <span class="font-bold text-4xl">Klíčové body</span>
     
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Mail</span>
-                           
-
                             <ul class="paragraph">
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Koncové šifrování:</a>
-                                        
-                                        <span class="text-tooltip-container relative inline-block mx-1">
-                                            <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p>Zajišťuje, že e-maily může číst pouze odesílatel a příjemce.<sup class="font-bold">?</sup></p></span>
-                                            <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Platí pouze v případě, že odesílatel i příjemce používají ProtonMail. Pokud tomu tak není, můžete obsah e-mailu chránit heslem.</span>
-                                        </span>   
-                                        
-                                        
+                                        <a class="font-medium">Zdarma:</a><span> Za základní funkce se neplatí.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
@@ -732,9 +526,7 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Samodestruktivní e-maily:</a>
-
-                                        <span>E-maily lze nastavit tak, aby se po určité době samy zlikvidovaly.</span>
+                                        <a class="font-medium">Pro všechny platformy:</a><span> K dispozici na mobilních zařízeních i na počítačích.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
@@ -742,160 +534,14 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Ochrana heslem:</a><span> Zabezpečte své e-maily heslem, především při odesílání uživatelům, kteří nejsou uživateli služby Proton.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">E-mailové aliasy:</a>
-
-                                        <span>Vytvářejte alternativní e-mailové adresy, které přesměrovávají zprávy na váš původní e-mail.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Drive</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Zabezpečené cloudové úložiště:</a>
-                                        
-                                        <span>5 GB úložiště zdarma s možností upgradu na rozsáhlejší plány.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Bezpečné sdílení souborů:</a>
-
-                                        <span>Možnost bezpečného sdílení souborů pomocí odkazů chráněných heslem a datem vypršení platnosti.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Anonymní stahování:</a><span> Příjemci mají přístup ke sdíleným souborům, aniž by potřebovali účet Proton.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton VPN</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Bezplatné a placené možnosti:</a>
-                                        
-                                        <span>Můžete využívat služby VPN zdarma se slušnou rychlostí nebo upgradovat a získat přístup k více funkcím a zemím.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Kill Switch:</a>
-
-                                        <span>Chrání vaši IP adresu tím, že vás v případě výpadku VPN odpojí od internetu.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Pass</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Správce hesel:</a>
-                                        
-                                        <span>Správa a automatické vyplňování hesel na mobilu i počítači.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Generátor hesel:</a>
-
-                                        <span>Přizpůsobení délky a složitosti hesel.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Správa aliasů:</a>
-
-                                        <span>E-mailové aliasy lze spravovat přímo v aplikaci.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Calendar</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Šifrovaný kalendář:</a>
-                                        
-                                        <span>Díky koncovému šifrování udržíte svůj denní rozvrh v soukromí.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Snadné použití:</a>
-
-                                        <span>Snadno a rychle importujte data z Google kalendáře a využívejte jednoduché a známé uživatelské rozhraní.</span>
+                                        <a class="font-medium">Ochrana osobních údajů:</a><span> Vaše poznámky jsou v naprostém soukromí.</span>
                                     </div>
                                 </li>
                             </ul>
                         </section>
     
                         <section class="section">
-                            <span class="font-bold text-4xl">Rodinné a firemní plány</span>
+                            <span class="font-bold text-4xl">Design a použitelnost</span>
     
                             <ul class="paragraph">
                                 <li class="bullet-point">
@@ -903,51 +549,96 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Rodinný plán:</a><span> Sdílejte až 3 TB úložiště, 90 e-mailových adres a další služby mezi 6 uživateli.</span>
+                                        <a class="font-thin">Moderní a jednoduchý:</a><span> Aplikace má přehledný vzhled a je tak snadno ovladatelná pro každého.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Firemní plán:</a><span> Zahrnuje vlastní domény, prioritní podporu a pokročilé zabezpečení pro profesionální použití.</span>
+                                        <a class="font-medium">Pokročilé přizpůsobení:</a>
+                                        <span> V případě, že chcete mít nad poznámkami větší kontrolu, můžete je upravovat pomocí  
+                                            <span class="text-tooltip-container relative inline-block mx-1">
+                                                <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400">HTML</span>
+                                                <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">"HypeTtext Markup Language" je standardní jazyk pro tvorbu webových stránek.</span>
+                                            </span>
+                                            a 
+                                            <span class="text-tooltip-container relative inline-block mx-1">
+                                                <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400">CSS</span>
+                                                <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">"Cascading Style Sheets" je standardní jazyk pro stylizování textu a ostatních prvků do stylu webových stránek.</span>
+                                            </span>
+                                            .</span>
                                     </div>
-                                </li>
+                                </li> 
                             </ul>
                         </section>
                         
                         <section class="section">
-                            <span class="font-bold text-4xl">Další placené výhody</span>
+                            <span class="font-bold text-4xl">Synchronizace poznámek</span>
     
-                            
+                            <p class="paragraph mt-4">Pokud chcete mít přístup ke svým poznámkám na více zařízeních, máte dvě možnosti:</p>
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">1. Placená synchronizace:</a><span> Můžete platit roční poplatek za bezpečnou synchronizaci uloženou na šifrovaných serverech, která zajistí, že stav vašich poznámek bude vždy aktuální a chráněný.</span>
+                                    </div>
+                                </li>
+    
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">2. Aplikace třetích stran:</a><span> K synchronizaci poznámek můžete použít jiné aplikace, jako jsou Syncthing nebo iCloud, které však nemusí poskytovat stejnou úroveň zabezpečení a spolehlivosti jako placená možnost Obsidianu.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <span class="font-bold text-4xl">Užitečné klávesové zkratky</span>
+
                             <ul class="paragraph">
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Proton Drive Plus:</a><span> 200GB úložiště za €79,99 ročně.</span>
+                                        <a class="font-medium">Ctrl + O |</a><span> Otevření poznámky</span>
                                     </div>
                                 </li>
+    
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Proton Unlimited:</a>
-
-                                        <span>500GB úložiště, vysokorychlostní VPN a další služby za €199,99 ročně.</span>
+                                        <a class="font-medium">Ctrl + Shift + F |</a><span> Hledání ve všech poznámkách</span>
                                     </div>
                                 </li>
+
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Pokročilé zabezpečení:</a>
+                                        <a class="font-medium">Ctrl + E |</a><span> Přepínání režimu náhled/úpravy</span>
+                                    </div>
+                                </li>
 
-                                        <span>Včetně monitorování dark webu a upozornění na průniky.</span>
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + N |</a><span> Vytvoření nové poznámky</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + P |</a><span> Otevření příkazové nabídky</span>
                                     </div>
                                 </li>
                             </ul>
@@ -960,59 +651,54 @@
                         </span>
     
                         <section class="section">
-                            <p class="paragraph"><span class="font-bold">Proton nabízí rozsáhlou sadu služeb zaměřených na ochranu soukromí, která je ideální pro ty, kteří vyžadují silné zabezpečení a snadné používání. S nabídkami pro jednotlivce, rodiny i firmy je Proton důvěryhodnou značkou v oblasti digitálního soukromí.</p>    
+                            <p class="paragraph"><span class="font-bold">Obsidian</span> je fantastická aplikace pro bezpečné, organizované a dostupné poznámky na všech zařízeních. Je uživatelsky přívětivá pro začátečníky a nabízí pokročilé přizpůsobení pro ty, kteří chtějí mít větší kontrolu.</p>    
                         </section>
     
-                        <section class="bg-zinc-900 shadow-md p-8 mb-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
+                        <section class="bg shadow-md p-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
                             <p class="title-three"><a class="underline underline-offset-2 decoration-emerald-500 decoration-2">Klady</a></p>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <p class="text-sm font-semibold">VPN zdarma</p>
+                                <p class="text-sm font-semibold">Vysoce přizpůsobitelný</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <p class="text-sm font-semibold">Koncové šifrování pro všechny služby</p>
+                                <p class="text-sm font-semibold">Volnost v organizaci poznámek</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class=""><p class="text-sm font-semibold">Švýcarská ochrana soukromí <!-- <sup class="font-bold">?</sup> --> </p></span>
-                                    <!-- <span class="text-tooltip flex justify-center text-xs sm:w-44 transform -translate-x-10">Společnost Proton AG sídlí ve Švýcarsku, které je známé svými přísnými zákony na ochranu osobních údajů.</span> -->
-                                </span>  
+                                <p class="text-sm font-semibold">Synchronizace napříč více zařízeními</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <p class="text-sm font-semibold">Inovativní a zákaznicky orientovaný systém</p>
+                                <p class="text-sm font-semibold">Koncové šifrování</p>
                             </div>
     
                             <p class="title-three"><a class="underline underline-offset-2 decoration-red-500 decoration-2">Zápory</a></p>
     
-                            <div class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
+                            <div role="alert" class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
                                 </svg>
                                 <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class=""><p class="text-sm font-semibold">Omezené úložiště u bezplatných plánů</p></span>
-                                    <!-- <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">méně než u společnosti Google nebo Microsoft</span> -->
+                                    <span class=""><p class="text-sm font-semibold">Trvá déle, než si zvyknete na všechny funkce</p></span>
+                                    <!-- <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Přestože je Obsidian poměrně intuitivní, může chvíli trvat, než si na všechny jeho funkce zvyknete.</span> -->
                                 </span>   
-                            </div>
-                            <div class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
-                                </svg>
-                                <span class="text-sm font-semibold">Sdílí metadata v souladu se švýcarskými zákony v případě nezákonných aktivit.</span>  
                             </div>
                         </section>
 
-                        <section class="mt-32 pl-4">
+                        <section class="mt-32 pl-4"></section>
                             <p class="text-5xl font-bold mb-8">Kam dál?</p>
 
                             <span class="relative flex justify-center">
@@ -1022,39 +708,38 @@
                             </span>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://youtu.be/68SpKcnyPSE?si=Bcc4U2mixxXHWSRe" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://youtube.com/playlist?list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd&feature=shared" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     🎥 Videonávod (ANGLICKY)
                                 </a>
                             </div>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://proton.me/support" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://help.obsidian.md/Home" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     📖 Centrum nápovědy (ANGLICKY)
                                 </a>
                             </div>
 
-                            <div class="mt-8 my-2 max-w-max">
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p class="text-sm font-semibold">
-                                        
-                                        <a href="https://proton.me/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                            👪 Dostupné plány předplatného
-                                        </a>
-
-                                        <sup class="font-bold">?</sup></p></span>
-                                    <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Můžete si také koupit prémiový plán pro každý z produktů Proton zvlášť, což znamená, že nemusíte platit Proton Unlimited, pokud chcete využívat pouze výhody jedné ze služeb.</span>
-                                </span>  
+                            <div class="my-2 max-w-max">
+                                <a href="https://forum.obsidian.md/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    💬 Podpora komunity (ANGLICKY)
+                                </a>
                             </div>
 
                             <div class="mt-8 my-2 max-w-max">
-                                <a href="https://www.reddit.com/r/ProtonMail/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                    🟠 Reddit
+                                <a href="https://obsidian.md/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    👪 Dostupné plány předplatného
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://discord.com/invite/obsidianmd" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🗣️ Discord server
                                 </a>
                             </div>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://x.com/ProtonPrivacy" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                    🐦 X Handle - @ProtonPrivacy
+                                <a href="https://www.reddit.com/r/ObsidianMD/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🟠 Reddit
                                 </a>
                             </div>
                         </section>
@@ -1097,9 +782,9 @@
                     <div class="tooltip absolute -left-24 sm:-left-2 mt-4 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
                         <ul class="p-4 space-y-1">
                             <li class="py-1 font-bold">Finanční dostupnost:</li>
-                            <li class="pl-4 py-1">💲 Bezplatný plán s možností vylepšení</li>
+                            <li class="pl-4 py-1">💰 Plně zdarma</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(Pokud chcete mít přístup ke svým poznámkám na více zařízeních, můžete se přihlásit k předplatnému, které vám umožní je synchronizovat.)</li>
                             <li class="pl-4 py-1">🎓 Studentská sleva</li>
-                            <li class="pl-4 py-1">👨‍👩‍👧‍👦 Rodinný plán</li>
                             <li class="pl-4 py-1">🚫 Bez reklam</li>
                         </ul>
                     </div>
@@ -1122,7 +807,6 @@
                             <li class="pl-4 py-1">✅ Windows</li>
                             <li class="pl-4 py-1">✅ MacOS</li>
                             <li class="pl-4 py-1">✅ Linux</li>
-                            <li class="pl-4 py-1">✅ Web-App</li>
                         </ul>
                     </div>
                 </div>
@@ -1142,6 +826,9 @@
                         <ul class="p-4 space-y-1">
                             <li class="py-1 font-bold">Pokročilé možnosti:</li>
                             <li class="pl-4 py-1">🛠️ Přizpůsobitelné</li>
+                            <li class="pl-4 py-1">🔧 Nástroje pro vývojáře</li>
+                            <li class="pl-4 py-1">⚙️ Pokročilá konfigurace</li>
+                            <li class="pl-4 py-1">🔌 Přístup k API</li>
                         </ul>
                     </div>
                 </div>
@@ -1163,8 +850,8 @@
                     <div class="tooltip absolute -left-64 sm:-left-2 mt-12 w-64 bg-background border border-gray-800 rounded-2xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-50">
                         <ul class="p-4 space-y-1">
                             <li class="py-1 font-bold">Ostatní:</li>
-                            <li class="pl-4 py-1">🔐 Rodičovská kontrola</li>
-                            <li class="pl-8 py-1 text-gray-500 font-normal">(s rodinným plánem můžete vytvořit účty pro své děti a mít k nim přístup)</li>
+                            <li class="pl-4 py-1">🌐 Nevyžaduje internetové připojení</li>
+                            <li class="pl-8 py-1 text-gray-500 font-normal">(synchronizace samozřejmě ano)</li>
                             <li class="pl-4 py-1">🔄 Pravidelné aktualizace</li>
                             <li class="pl-4 py-1">💼 Komerční plán</li>
                             <li class="pl-4 py-1">🐙 Open-Source</li>
@@ -1187,27 +874,20 @@
                     <div class="font-body text-md mt-12 pb-2">
     
                         <section class="section">
-                            <p class="title-two">Proton je ideální volbou pro ty, kteří upřednostňují digitální soukromí. Společnost Proton sídlí ve Švýcarsku a využívá tamních přísných zákonů na ochranu osobních údajů, které zajišťují bezkonkurenční bezpečnost dat. Společnost je známá svým odhodláním chránit soukromí uživatelů, neustále přináší inovace a udržuje blízký kontakt se svými uživateli.    
+                            <p class="title-two">Chcete superbezpečné, ale zároveň přívětivé a jednoduché místo pro své poznámky?</p>
+                            <p class="paragraph">Dokonalým řešením této kombinace je <span class="font-bold">Obsidian</span>. Tento bezplatný software, který můžete používat jak v mobilu, tak na počítači, je skvělou volbou, pokud chcete mít své poznámky v naprostém soukromí a zároveň je mít organizované.</p>    
                         </section>
     
                         <section class="section">
-                            <span class="font-bold text-4xl mb-8">Klíčové služby poskytované společností Proton AG</span><br>
+                            <span class="font-bold text-4xl">Klíčové body</span>
     
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Mail</span>
-                           
-                            <p class="paragraph">Proton Mail je základní službou, která nabízí robustní ochranu soukromí e-mailů pomocí šifrování E2E.</p>
-
                             <ul class="paragraph">
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Samodestruktivní e-maily:</a>
-                                        
-                                        <span> E-maily lze nastavit tak, aby se po určité době samy zlikvidovaly.</span>
-                                        
-                                        
+                                        <a class="font-medium">Zdarma:</a><span> Za základní funkce se neplatí.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
@@ -1215,9 +895,7 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Ochrana heslem:</a>
-
-                                        <span> E-maily je možné chránit heslem pro příjemce používající jiné služby než službu Proton.</span>
+                                        <a class="font-medium">Cross-Platform:</a><span> K dispozici na mobilních zařízeních i na počítačích.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
@@ -1225,248 +903,100 @@
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">E-mailové aliasy:</a>
-
-                                        <span> Vytvářejte vyhrazené e-mailové adresy, které přeposílají zprávy na váš původní e-mail.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Drive</span>
-                           
-                            <p class="paragraph">Bezpečné a uživatelsky přívětivé cloudové úložiště.</p>
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">5 GB volného úložiště:</a>
-                                        
-                                        <span> V případě placených balíčků lze rozšířit až na 500 GB (pro jednotlivce).</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Zabezpečené sdílení:</a>
-
-                                        <span> Umožňuje sdílet soubory pomocí odkazů chráněných heslem a datem vypršení platnosti.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Anonymní přístup:</a><span> Příjemci mohou stahovat sdílené soubory, aniž by potřebovali účet Proton.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton VPN</span>
-                           
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Bezplatný přístup do více zemí:</a>
-                                        
-                                        <span> S dostatečnou rychlostí.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Kill Switch:</a>
-
-                                        <span> Automaticky vás odpojí od internetu, pokud dojde k přerušení připojení VPN, aby se zamezilo úniku adresy IP.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Pass</span>
-                           
-                            <p class="paragraph">Vysoce vybavený správce hesel.</p>
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Automatické vyplňování údajů:</a>
-                                        
-                                        <span> Na mobilních zařízeních (jako aplikace) i v prohlížečích (jako rozšíření prohlížeče).</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Generátor hesel:</a>
-
-                                        <span> Lze přizpůsobit délku a složitost hesla.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Správa aliasů:</a>
-
-                                        <span> Zde můžete spravovat své e-mailové aliasy.</span>
-                                    </div>
-                                </li>
-                            </ul>
-
-
-                            <span class="text-2xl font-bold mt-8 inline-block">Proton Calendar</span>
-                           
-                            <p class="paragraph">Šifrovaný kalendář, který zajistí, že váš denní rozvrh zůstane soukromý.</p>
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Známé uživatelské rozhraní:</a>
-                                        
-                                        <span> Podobné ostatním mainstreamovým kalendářům.</span> 
-                                        
-                                        
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Import dat:</a>
-
-                                        <span> Snadný import dat z Google kalendáře.</span>
+                                        <a class="font-medium">Ochrana osobních údajů:</a><span> Vaše poznámky jsou v naprostém soukromí.</span>
                                     </div>
                                 </li>
                             </ul>
                         </section>
     
                         <section class="section">
-                            <span class="font-bold text-4xl">Rodinné a komerční plány</span><br><br>
+                            <span class="font-bold text-4xl">Design a použitelnost</span>
     
-                            <span class="title-two">Rodinný plán</span>
-
                             <ul class="paragraph">
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Až 6 uživatelů:</a><span> Sdílejte až 3 TB úložiště, 90 e-mailových adres a všechny funkce ochrany osobních údajů, které Proton nabízí.</span>
+                                        <a class="font-thin">Moderní a intuitivní:</a><span> Aplikace má přehledný design, který usnadňuje její používání všem uživatelům.</span>
                                     </div>
                                 </li>
                                 <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Jednotná fakturace:</a><span> Spravujte všechny rodinné účty pomocí jediného předplatného.</span>
+                                        <a class="font-medium">Pokročilé přizpůsobení:</a>
+                                        <span> Pomocí CSS a HTML si můžete poznámky rozsáhle přizpůsobit a vytvořit tak vysoce personalizované prostředí.</span>
                                     </div>
-                                </li>
-                            </ul>
-
-                            <span class="title-two">Firemní plán</span>
-
-                            <ul class="paragraph">
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Vlastní domény:</a><span> Využijte vlastní doménu pro profesionální e-mailové adresy.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Prioritní podpora:</a><span> Rychlejší reakce na dotazy týkající se pracovních záležitostí.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Zabezpečené hlavní servery:</a><span> Vylepšené zabezpečení firemních dat.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Více účtů:</a><span> Podpora týmové spolupráce a managementu.</span>
-                                    </div>
-                                </li>
-                                <li class="bullet-point">
-                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
-                                    </svg>
-                                    <div class="text-content ml-2">
-                                        <a class="font-medium">Důvěryhodné ze stran:</a><span> OSN, The New York Times, The Guardian a <a href="https://proton.me/business" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">další.</a></span>
-                                    </div>
-                                </li>
+                                </li> 
                             </ul>
                         </section>
                         
                         <section class="section">
-                            <span class="font-bold text-4xl">Další placené výhody</span>
+                            <span class="font-bold text-4xl">Synchronizace poznámek</span>
     
-                            <p class="paragraph">Pro prémiové uživatele nabízí Proton zvýšené bezpečnostní funkce a rozšíření úložiště:</p>
-                            
+                            <ul class="paragraph">
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">1. Servery s koncovým šifrováním:</a><span> Můžete platit roční poplatek za bezpečnou synchronizaci uloženou na šifrovaných serverech, která zajistí, že stav vašich poznámek bude vždy aktuální a chráněný.</span>
+                                    </div>
+                                </li>
+    
+                                <li class="bullet-point">
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">2. Aplikace třetích stran:</a><span> K synchronizaci poznámek můžete použít jiné aplikace, jako jsou Syncthing nebo iCloud, které však nemusí poskytovat stejnou úroveň zabezpečení a spolehlivosti jako placená možnost Obsidianu.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="section">
+                            <span class="font-bold text-4xl">Užitečné klávesové zkratky</span>
+
                             <ul class="paragraph">
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Více úložného prostoru:</a><span> Získejte až 500 GB úložiště pro jednotlivce s placenými plány Proton.</span>
+                                        <a class="font-medium">Ctrl + O |</a><span> Otevření poznámky</span>
                                     </div>
                                 </li>
+    
                                 <li class="bullet-point">
                                     <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
                                         <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
                                     </svg>
                                     <div class="text-content ml-2">
-                                        <a class="font-medium">Více zabezpečení:</a>
+                                        <a class="font-medium">Ctrl + Shift + F |</a><span> Hledání ve všech poznámkách</span>
+                                    </div>
+                                </li>
 
-                                        <span class="text-tooltip-container relative inline-block mx-1">
-                                            <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400">Chraňte se pomocí funkcí, jako například sledování dark webu.<sup class="font-bold">?</sup></span>
-                                            <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Proton vás upozorní, pokud se stanete součástí cíle hackerů a dojde k úniku vašich osobních údajů.</span>
-                                        </span>  
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + E |</a><span> Přepínání režimu náhled/úpravy</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + N |</a><span> Vytvoření nové poznámky</span>
+                                    </div>
+                                </li>
+
+                                <li class="bullet-point">
+                                    <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                        <path fill-rule="evenodd" d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" clip-rule="evenodd" />
+                                    </svg>
+                                    <div class="text-content ml-2">
+                                        <a class="font-medium">Ctrl + P |</a><span> Otevření příkazové nabídky</span>
                                     </div>
                                 </li>
                             </ul>
@@ -1479,100 +1009,65 @@
                         </span>
     
                         <section class="section">
-                            <p class="paragraph"><span class="font-bold">Proton nabízí bezkonkurenční sadu služeb pro ty, kteří vyžadují nejvyšší úroveň soukromí a bezpečnosti. Jeho silný ekosystém, snadno ovladatelný design a důraz na inovace z něj dělají vynikající volbu v oblasti digitálního soukromí.</p>    
+                            <p class="paragraph"><span class="font-bold">Obsidian</span> je fantastická aplikace pro bezpečné, organizované a dostupné poznámky na všech zařízeních. Je uživatelsky přívětivá pro začátečníky a nabízí pokročilé přizpůsobení a funkce pro ty, kteří chtějí mít nad vším větší kontrolu.</p>    
                         </section>
     
-                        <section class="bg-zinc-900 shadow-md p-8 mb-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
+                        <section class="bg shadow-md p-8 rounded-3xl transform hover:shadow-lg hover:-translate-y-1 transition ease-out duration-500">
                             <p class="title-three"><a class="underline underline-offset-2 decoration-emerald-500 decoration-2">Klady</a></p>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <p class="text-sm font-semibold">VPN zdarma</p>
+                                <p class="text-sm font-semibold">Vysoce přizpůsobitelný</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <span class="text-sm font-semibold">
-                                    Koncové šifrování pro všechny služby  
-                                </span>
+                                <p class="text-sm font-semibold">Volnost v organizaci poznámek</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <span class="text-sm font-semibold">
-                                    5 e-mailových aliasů zdarma 
-                                </span>
+                                <p class="text-sm font-semibold">Synchronizace napříč více zařízeními s šifrováním E2E</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class=""><p class="text-sm font-semibold">Švýcarská záruka soukromí</p></span>
-                                    <!-- <span class="text-tooltip flex justify-center text-xs sm:w-44 transform -translate-x-10">Všechny servery společnosti ProtonMail jsou umístěny ve Švýcarsku v zabezpečených centrech. Uživatelské údaje jsou tak chráněny švýcarským právem, které obecně zajišťuje lepší ochranu soukromí než právo USA nebo EU.</span> -->
-                                </span> 
+                                <p class="text-sm font-semibold">Široká škála pluginů komunity</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <span class="text-sm font-semibold">
-                                    Vysoká aktivita na sociálních sítích (Blog, X, Instagram...)
-                                </span>
+                                <p class="text-sm font-semibold">Možnost zveřejnit poznámky jako webové stránky</p>
                             </div>
-                            <div class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
+
+                            <div role="alert" class="paragraph max-w-max dark:bg-green-900 border-l-4 border-green-500 dark:border-green-700 text-green-600 hover:text-gray-300 dark:text-green-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-green-800 dark:hover:bg-green-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-green-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
                                 </svg>      
-                                <span class="text-sm font-semibold">
-                                    Kreativita, inovace a naslouchání svým uživatelům
-                                </span>
+                                <p class="text-sm font-semibold">Pokročilé vyhledávání v poznámkách</p>
                             </div>
     
                             <p class="title-three"><a class="underline underline-offset-2 decoration-red-500 decoration-2">Zápory</a></p>
     
-                            <div class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
-                                </svg>
-                                <span class="text-sm font-semibold">
-                                    Předměty e-mailů nejsou šifrované
-                                </span> 
-                            </div>
-
-                            <div class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
+                            <div role="alert" class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
                                 </svg>
                                 <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class=""><p class="text-sm font-semibold">Bezplatný e-mailový tarif nabízí pouze 1 GB úložného prostoru a cloudový disk 5 GB</p></span>
-                                    <!-- <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">méně než Google, který nabízí 15 GB zdarma</span> -->
+                                    <span class=""><p class="text-sm font-semibold">Trvá déle, než si zvyknete na všechny funkce</p></span>
+                                    <!-- <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Přestože je Obsidian poměrně intuitivní, může chvíli trvat, než si na všechny jeho funkce zvyknete.</span> -->
                                 </span>   
                             </div>
-
-                            <div class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
-                                </svg>
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class=""><p class="text-sm font-semibold">Sdílí metadata</p></span>
-                                    <!-- <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">např. recovery e-mail, IP adresu s příslušnými orgány v případě nezákonných aktivit v rozporu se švýcarskými zákony</span> -->
-                                </span>   
-                            </div>
-
-                            <div class="paragraph max-w-max dark:bg-red-900 border-l-4 border-red-500 dark:border-red-700 text-red-600 hover:text-gray-300 dark:text-red-100 p-4 rounded-lg flex items-center transition duration-300 ease-in-out hover:bg-red-800 dark:hover:bg-red-800 transform hover:scale-105">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 flex-shrink-0 mr-2 text-red-600">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715a12.137 12.137 0 0 1-.068-1.285c0-2.848.992-5.464 2.649-7.521C5.287 4.247 5.886 4 6.504 4h4.016a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.75 2.25 2.25 0 0 0 9.75 22a.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384m-10.253 1.5H9.7m8.075-9.75c.01.05.027.1.05.148.593 1.2.925 2.55.925 3.977 0 1.487-.36 2.89-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398-.306.774-1.086 1.227-1.918 1.227h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 0 0 .303-.54" />
-                                </svg>
-                                <span class="text-sm font-semibold">
-                                    Někdy se příliš soustředí na vývoj nových produktů namísto vylepšování těch existujících
-                                </span> 
-                            </div>
-                            
                         </section>
 
                         <section class="mt-32 pl-4">
@@ -1585,56 +1080,55 @@
                             </span>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://youtu.be/68SpKcnyPSE?si=Bcc4U2mixxXHWSRe" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://youtube.com/playlist?list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd&feature=shared" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     🎥 Videonávod (ANGLICKY)
                                 </a>
                             </div>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://proton.me/support" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://help.obsidian.md/Home" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     📖 Centrum nápovědy (ANGLICKY)
                                 </a>
                             </div>
 
-                            <div class="mt-8 my-2 max-w-max">
-                                <span class="text-tooltip-container relative inline-block mx-1">
-                                    <span class="text-containing-tooltip border-b border-dotted underline-offset-2 border-gray-400"><p class="text-sm font-semibold">
-                                        
-                                        <a href="https://proton.me/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                            👪 Dostupné plány předplatného
-                                        </a>
-
-                                        <sup class="font-bold">?</sup></p></span>
-                                    <span class="text-tooltip text-xs sm:w-44 transform -translate-x-10">Můžete si také koupit prémiový plán pro každý z produktů Proton zvlášť, což znamená, že nemusíte platit Proton Unlimited, pokud chcete využívat pouze výhody jedné ze služeb.</span>
-                                </span>  
+                            <div class="my-2 max-w-max">
+                                <a href="https://forum.obsidian.md/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    💬 Podpora komunity (ANGLICKY)
+                                </a>
                             </div>
 
                             <div class="mt-8 my-2 max-w-max">
-                                <a href="https://www.reddit.com/r/ProtonMail/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                    🟠 Reddit
+                                <a href="https://obsidian.md/pricing" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    👪 Dostupné plány předplatného
+                                </a>
+                            </div>
+
+                            <div class="mt-8 my-2 max-w-max">
+                                <a href="https://discord.com/invite/obsidianmd" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🗣️ Discord server
                                 </a>
                             </div>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://x.com/ProtonPrivacy" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                    🐦 X Handle - @ProtonPrivacy
+                                <a href="https://www.reddit.com/r/ObsidianMD/" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    🟠 Reddit
                                 </a>
                             </div>
 
                             <div class="mt-8 my-2 max-w-max">
-                                <a href="https://proton.me/community/open-source" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
-                                    🔗 Zdrojový kód
+                                <a href="https://www.zsolt.blog/2021/05/obsidian-performance-test-take-1.html" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                    📈 Měření výkonnosti
                                 </a>
                             </div>
 
                             <div class="mt-8 my-2 max-w-max">
-                                <a href="https://proton.me/legal/terms" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://obsidian.md/terms" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     📜 Podmínky služby
                                 </a>
                             </div>
 
                             <div class="my-2 max-w-max">
-                                <a href="https://proton.me/legal/privacy" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
+                                <a href="https://obsidian.md/privacy" target="_blank" class="cursor-pointer text-sm font-bold text-white p-0.5 underline underline-offset-2 decoration-indigo-400 decoration-2 relative bg-left transition-all duration-500 ease-out bg-gradient-to-r from-indigo-400 to-indigo-500 bg-[length:0%_100%] bg-no-repeat hover:bg-[length:100%_100%]">
                                     🔒 Zásady ochrany osobních údajů
                                 </a>
                             </div>
